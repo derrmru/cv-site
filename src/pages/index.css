@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;400&display=swap');
+
+:root {
+    --the-white: #E1EFE6;
+    --the-black: #242331;
+    --main-color: #738290;
+    font-family: 'Rokkitt', serif;
+    font-weight: 100;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--main-color);
+}
+
+hr {
+    background-color: var(--the-white);
+    width: 64%;
+    margin: 20px 0;
+}
+
+a {
+    color: var(--the-black);
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+.homepage {
+    display: flex;
+    flex-direction: row;
+}
+
+.huge-title {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: var(--the-black);
+    position: relative;
+}
+
+.section-2-container {
+    width: 100%;
+    background-color: var(--the-white);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section-2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.section-2 h3 {
+    font-size: 24px;
+}
+
+.title {
+    font-size: 40px;
+    text-align: left;
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+
+.left-section {
+    width: 60%;
+}
+
+.right-section {
+    width: 40%;
+}
+
+.right-section h4 {
+    font-weight: 100;
+}

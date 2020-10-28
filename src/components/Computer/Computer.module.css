@@ -1,0 +1,66 @@
+.outline {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 80%;
+    height: 60%;
+    border: solid 1px var(--the-white);
+    border-radius: 5%;
+}
+
+.screen {
+    position: absolute;
+    text-align: left;
+    top: 12%;
+    right: 12%;
+    width: 75%;
+    height: 56%;
+    border: solid 1px var(--the-white);
+    border-radius: 5%;
+    font-size: 12px;
+    background-color: rgba(5, 59, 6, 0.007);
+    padding-left: 1%;
+    overflow: hidden;
+    color: var(--the-white);
+}
+
+.stand {
+    position: absolute;
+    top: 71%;
+    right: 30%;
+    width: 40%;
+    height: 8%;
+    border: solid 1px var(--the-white);
+    transform-style: preserve-3d;
+    transform: rotateX(70deg);
+}
+
+.keyboard {
+    position: absolute;
+    top:80%;
+    right: 10%;
+    width: 80%;
+    height: 15%;
+    border: solid 1px var(--the-white);
+    border-radius: 5%;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg);
+}
+
+.keys {
+    position: absolute;
+    top: 8px;
+    right: 12%;
+    width: 76%;
+    height: 5%;
+    border: dashed 1px var(--the-white);
+}
+
+.keysTwo {
+    position: absolute;
+    top: 15px;
+    right: 12%;
+    width: 76%;
+    height: 5%;
+    border: dashed 1px var(--the-white);
+}
