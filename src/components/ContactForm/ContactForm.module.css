@@ -7,18 +7,17 @@
     padding: 0 0 0 0;
 }
 
-.contactBackground {
-    width: 100%;
-}
-
 form {
-    width: 80%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
 
 form p {
     margin: 0;
+    width: 100%;
 }
 
 form label {
@@ -28,23 +27,16 @@ form label {
 form input {
     width: 100%;
     margin: 0 0 10px 0;
-    padding: 10px;
+    padding: 10px 0;
     border: none;
 }
 
 form textarea {
     width: 100%;
     margin: 0 0 10px 0;
-    padding: 10px;
+    padding: 10px 0;
     border: none;
     height: 20vh;
-}
-
-.button-container {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
 }
 
 form button {
@@ -55,29 +47,24 @@ form button {
     cursor: pointer;
     margin: 0 0 2vh 0;
     background-color: var(--main-color);
-    color: var(--the-white);
+    color: var(--the-black);
     padding: 12px 0;
     border-radius: 5px;
 }
 
 form button:hover {
     background-color: var(--the-black);
+    color: var(--the-white);
 }
 
 @media only screen and (max-width: 1025px) {
     form {
-        width: 80%;
-    }
-    .contactBackground {
-        background-size: 70%;
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 600px) {
     form {
-        width: 94%;
-    }
-    .contactBackground {
-        background-size: cover;
+        width: 100%;
     }
 }

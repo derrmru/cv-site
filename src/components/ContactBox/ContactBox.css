@@ -1,0 +1,42 @@
+.contact-box {
+    width: 90%;
+    margin: auto auto 40px auto;
+}
+
+.contact-options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-options h4 {
+    text-align: left;
+    margin: 15px 0 15px 0;
+}
+
+.contact-options button {
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px 0;
+    border-radius: 5px;
+    border: 1px solid var(--the-black);
+    color: var(--the-black);
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-options button:hover {
+    background-color: var(--the-black);
+    color: var(--the-white);
+}
+
+.social-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-buttons button {
+    width: 40%;
+}

@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
-import './Headline.css'
 
 const Headline = () => {
-    const words = ['Web', 'PWA', 'React', 'Nomad']
+    const words = ['Web', 'Software', 'React', 'Nomad', 'PWA', 'Javascript', 'Full Stack']
     let countRef = useRef(0);
     let wordRef = useRef(0);
     const [count, setCount] = useState(0);
@@ -12,7 +11,7 @@ const Headline = () => {
         const interval = setInterval(() => {
             if (wordRef.current === words.length) {
                 clearInterval(interval)
-            } else if (countRef.current === toBeTyped.length + 4 && wordRef.current < words.length - 1) {
+            } else if (countRef.current === toBeTyped.length + 6 && wordRef.current < words.length - 1) {
                 wordRef.current += 1
                 countRef.current = 0
                 setToBeTyped(words[wordRef.current])
@@ -22,13 +21,17 @@ const Headline = () => {
                 setCount(countRef.current)
             }
 
-        }, 600);
+        }, 400);
         return () => clearInterval(interval);
-      }, []);
+      }, [toBeTyped.length, words]);
 
     return (
-        <div>
-            {toBeTyped.substr(0, count)} Developer
+        <div className="headline-container">
+            <div className="keep-height">
+                {toBeTyped.substr(0, count)}
+                <span style={count > words[wordRef.current].length && count % 2 === 0 ? {visibility: 'hidden'} : {visibility: 'visible'}}>|</span>
+            </div>
+            <div>Developer</div>
         </div>
     )
 }

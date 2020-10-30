@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './ContactForm.module.css'
 
-const Contact = () => {
+const Contact = (props) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [telephone, setTelephone] = useState("");
@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <>
             <div className={styles.formContainer}>
-                <form name="contact" method="post" action="/submitted/" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form name={props.contactName} method="post" action="/submitted/" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="form-name" value="contact" />
                     <p>
                     <label>
@@ -36,9 +36,7 @@ const Contact = () => {
                         <textarea type="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
                     </label>
                     </p>
-                    <div className="button-container">
-                        <div><button type="submit">Send</button></div>
-                    </div>
+                    <button type="submit">Send</button>
                 </form>
             </div>
         </>

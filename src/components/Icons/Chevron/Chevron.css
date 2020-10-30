@@ -1,0 +1,23 @@
+.chevron {
+    justify-self: self-end;
+    margin-right: 30px;
+    padding: 10px;
+    background-color: var(--main-color);
+    outline: none;
+    border: 1px solid var(--the-black);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.chevron:hover {
+    background-color: var(--the-black);
+}
+
+.up-arrow {
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid var(--the-black);
+    border-top: 2px solid var(--the-black);
+    transform: rotate(45deg);
+}

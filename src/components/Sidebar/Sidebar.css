@@ -3,16 +3,22 @@
     width: 20%;
     background-color: var(--the-black);
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     -webkit-box-shadow: 10px 0px 22px -6px rgba(0,0,0,0.5);
     -moz-box-shadow: 10px 0px 22px -6px rgba(0,0,0,0.5);
     box-shadow: 10px 0px 22px -6px rgba(0,0,0,0.5);
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.sidebar-scroll {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    height: auto;
 }
 
 .sidebar-titles h1, h2{
@@ -22,17 +28,20 @@
 
 .sidebar-titles {
     text-align: right;
+    margin-top: 20px;
+}
+
+.sidebar-titles h1 {
+    font-size: 2vw;
 }
 
 .sidebar-titles h2 {
-    font-size: 18px
+    font-size: 1.6vw
 }
 
 .computer-container {
-    position: fixed;
-    bottom: 40px;
-    width: 12vw;
-    height: 12vw;
+    width: 150px;
+    height: 150px;
     margin: auto;
     perspective: 120px;
 }
@@ -49,6 +58,9 @@
     text-decoration: none;
     margin: 20px 0;
     color: var(--the-white);
+    background-color: #ebebeb00;
+    border: none;
+    outline: none;
 }
 
 .linked {
@@ -60,4 +72,54 @@
 .linked:hover {
     color: var(--main-color);
 
+}
+
+@media only screen and (max-width: 1025px) {
+    .sidebar-container {
+        width: 100%;
+        z-index: 800;
+        height: 100vh;
+    }
+
+    .sidebar-titles {
+        text-align: center;
+    }
+
+    .sidebar-titles h1 {
+        font-size: 50px;
+    }
+    
+    .sidebar-titles h2 {
+        font-size: 30px;
+    }
+
+    .sidebar-items {
+        text-align: center;
+    }
+
+    .linked {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .sidebar-container {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .sidebar-titles h1 {
+        font-size: 30px;
+    }
+    
+    .sidebar-titles h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page-link {
+        margin: 10px 0;
+    }
 }

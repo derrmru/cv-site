@@ -1,6 +1,6 @@
 import React from "react"
-import Sidebar from "../components/Sidebar/Sidebar"
 import Body from "../templates/Body/Body"
+import SEO from "../components/SEO/SEO"
 import Headline from "../components/Headline/Headline"
 import DownwardArrow from "../components/Icons/DownwardArrow/DownwardArrow"
 import Experience from "../components/Experience/Experience"
@@ -10,19 +10,17 @@ import './index.css'
 
 export default function Home() {
   return (
-    <div className="homepage">
-      <Sidebar />  
-
+    <div className="homepage"> 
       <Body>
+        <SEO title="Home" />
         
         <div className="huge-title">
           <Headline />
-          <DownwardArrow />
+          <DownwardArrow linkTo='#section-2' />
         </div>
 
         <div id="section-2" className="section-2-container">
           <div className="section-2">
-            <div className="title">The Past</div>
             <div className="left-section">
               <h3>Experience</h3>
 
@@ -116,7 +114,7 @@ export default function Home() {
               <h4>Vanilla JS</h4>
 
               <h3>Get In Touch</h3>
-              <ContactForm />
+              <ContactForm contactName="contact-home" />
             </div>
           </div>
         </div>
