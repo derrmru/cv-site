@@ -39,7 +39,7 @@ const About = () => {
                                     <ul>
                                         <li>Europe-based remote worker.</li>
                                         <li>Full stack web development.</li>
-                                        <li>Clean, responsive mobile-first web code.</li>
+                                        <li>Clean, responsive & mobile-first web design.</li>
                                         <li>Well documented projects.</li>
                                     </ul>
                                     <p>I have a passion for writing and developing modern, detailed, innovative and experimental web applications or software.</p>

@@ -35,8 +35,9 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.social-buttons button {
+.social-buttons a {
     width: 40%;
 }

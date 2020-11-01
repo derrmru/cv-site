@@ -1,0 +1,31 @@
+.availableTimesContainer {
+    width: 96%;
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid var(--the-black);
+}
+
+.atBanner h2 {
+    color: var(--the-black);
+}
+
+.atBanner p {
+    margin-bottom: 0;
+}
+
+.hr {
+    width: 90%;
+    height: 1px;
+    margin: 20px auto;
+    background-color: var(--the-black);
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .availableTimesContainer {
+        width: 98%;
+        margin: 10px auto;
+    }
+}
