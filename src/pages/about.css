@@ -160,6 +160,12 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .about-background {
+        height: 90vh;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     .about-buttons {
         padding: 15px 10px;
