@@ -4,10 +4,10 @@ import styles from "./Computer.module.css"
 export default function Computer(){
     const [count, setCount] = useState(0);
     const countRef = useRef(count);
-    let toBeTyped; //page slug
+    let toBeTyped = useRef(''); //page slug
 
     useEffect(() => { // Type slug into icon
-        toBeTyped = window.location.pathname + "...";
+        toBeTyped.current = window.location.pathname + "...";
         const interval = setInterval(() => {
             countRef.current += 1;
             setCount(countRef.current)
@@ -22,7 +22,7 @@ export default function Computer(){
     return (
         <>
             <div className={styles.outline}></div>
-            <div className={styles.screen}>./{toBeTyped.substr(1, count)}</div>
+            <div className={styles.screen}>./{toBeTyped.current.substr(1, count)}</div>
             <div className={styles.stand}></div>
             <div className={styles.keyboard}>
                 <div className={styles.keys}></div>
