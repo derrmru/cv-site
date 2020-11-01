@@ -8,6 +8,7 @@ const DownwardArrow = (props) => {
     return (
         <button 
             className="downward-arrow"
+            aria-label="Scroll Downards"
             onKeyDown={(e) => e.code === "Space" && scrollTo(props.linkTo)}
             onClick={() => scrollTo(props.linkTo)}
             onMouseEnter={() => setMouse(true)}

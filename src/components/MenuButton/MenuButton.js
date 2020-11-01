@@ -4,6 +4,7 @@ import './MenuButton.css'
 const MenuButton = (props) => {
     return (
         <button 
+            aria-label="toggle navigation menu on mobile"
             className="menu-button"
             onClick={() => props.setToggle()}
             >
