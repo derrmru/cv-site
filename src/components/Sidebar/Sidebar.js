@@ -31,7 +31,7 @@ const Sidebar = (props) => {
                             let page = pageInfo.path;
                             if (page === '/') {
                                 words = 'Home'
-                            } else if (page !== '/dev-404-page/' && page !== '/404/' && page !== '/404.html' && page !== '/schedule/') {
+                            } else if (page !== '/dev-404-page/' && page !== '/404/' && page !== '/404.html' && page !== '/schedule/' && page !== '/submitted/') {
                                 let justWords = page.toString().split('/').join(' ').split('-').join(' ').split(' ')
                                 let updateArr = [];
                                 justWords.map(word => updateArr.push(word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()))
