@@ -62,7 +62,7 @@ const Calendar = (props) => {
                         <hr />
                         <div className="day-names">
                             {
-                                ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((day, i) => {
+                                ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map((day, i) => {
                                     return <div key={"day-name" + i} className="day-name">{day}</div>
                                 })
                             }
