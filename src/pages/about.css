@@ -161,6 +161,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .transparent-section {
+        background-position: cover;
+    }
+
     .about-background {
         height: 90vh;
     }
