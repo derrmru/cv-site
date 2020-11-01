@@ -115,11 +115,12 @@
     border-radius: 50%;
     border: 5px solid var(--the-black);
     background-color: var(--the-white);
-    background-image: url('../images/profile.png');
+    /*background-image: url('../images/profile.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     align-self: flex-start;
     margin: 20px 0;
+    overflow: hidden;
 }
 
 .profile-description {

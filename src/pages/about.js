@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import Body from "../templates/Body/Body"
 import SEO from '../components/SEO/SEO'
 import DownWardArrow from "../components/Icons/DownwardArrow/DownwardArrow"
@@ -7,6 +9,18 @@ import CV from '../downloads/cv.pdf'
 import './about.css'
 
 const About = () => {
+    const profileImage = useStaticQuery(graphql`
+    query {
+        file(relativePath: {eq: "profile.png"}) {
+            childImageSharp {
+              fluid(maxWidth: 1080) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+        }
+    }
+  `)
+
     return (
         <Body>
             <SEO title="About" />
@@ -33,7 +47,9 @@ const About = () => {
                         <div className="trans-text">
                             <h2>About Me</h2>
                             <div className="profile-container">
-                                <div className="profile-image"></div>
+                                <div className="profile-image">
+                                    <Img fluid={profileImage.file.childImageSharp.fluid} />
+                                </div>
                                 <div className="profile-description">
                                     <h3>Headlines</h3>
                                     <ul>

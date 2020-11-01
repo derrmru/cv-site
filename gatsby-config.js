@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+const path = require(`path`)
+
 module.exports = {
   /* Your site config here */
   siteMetadata: {
@@ -14,6 +16,15 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-smoothscroll`,
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
   ],
 }
