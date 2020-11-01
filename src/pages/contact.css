@@ -2,7 +2,7 @@
     width: 96%; 
     height: auto;
     background-color: var(--the-white);
-    padding: 20px;
+    padding: 20px 0;
     margin: auto;
     display: flex;
     flex-direction: row;

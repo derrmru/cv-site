@@ -162,7 +162,7 @@
 
 @media only screen and (max-width: 600px) {
     .transparent-section {
-        background-position: cover;
+        background-image: none;
     }
 
     .about-background {
