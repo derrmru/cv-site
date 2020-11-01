@@ -4,9 +4,10 @@ import styles from "./Computer.module.css"
 export default function Computer(){
     const [count, setCount] = useState(0);
     const countRef = useRef(count);
-    let toBeTyped = window.location.pathname + "..."; //page slug
+    let toBeTyped; //page slug
 
     useEffect(() => { // Type slug into icon
+        toBeTyped = window.location.pathname + "...";
         const interval = setInterval(() => {
             countRef.current += 1;
             setCount(countRef.current)
