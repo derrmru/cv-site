@@ -25,6 +25,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `G-GX24CL9352`,
+        head: false,
+        anonymize: true,
+      },
+    },
   ],
 }
