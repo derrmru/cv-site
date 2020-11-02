@@ -12,7 +12,7 @@ const Contact = (props) => {
             <div className={styles.formContainer}>
                 <form name={props.contactName} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="bot-field" />
-                    <input type="hidden" name={props.contactName} value="contact" />
+                    <input type="hidden" name="form-name" value={props.contactName} />
                     <p>
                     <label>
                         Full Name
