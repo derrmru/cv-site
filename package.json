@@ -19,6 +19,7 @@
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-sharp": "^2.6.43",
+    "gatsby-plugin-sitemap": "^2.5.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^2.3.37",
     "gatsby-transformer-sharp": "^2.5.20",
