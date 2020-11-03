@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import Body from "../templates/Body/Body"
 import SEO from '../components/SEO/SEO'
 import DownWardArrow from "../components/Icons/DownwardArrow/DownwardArrow"
-import CV from '../downloads/cv.pdf'
+import CV from '../downloads/CV.pdf'
 import './about.css'
 
 const About = () => {
