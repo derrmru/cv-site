@@ -29,7 +29,7 @@ const About = () => {
                     <div className="about-title">
                         <h1>About My Work</h1>
 
-                        <a href={require('../downloads/CV.pdf')} download>
+                        <a href={require('../downloads/cv.pdf')} download>
                             <button
                                 className="about-buttons"
                                 >
