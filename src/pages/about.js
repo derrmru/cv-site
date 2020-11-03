@@ -5,7 +5,6 @@ import Img from 'gatsby-image'
 import Body from "../templates/Body/Body"
 import SEO from '../components/SEO/SEO'
 import DownWardArrow from "../components/Icons/DownwardArrow/DownwardArrow"
-import CV from '../downloads/CV.pdf'
 import './about.css'
 
 const About = () => {
@@ -30,7 +29,7 @@ const About = () => {
                     <div className="about-title">
                         <h1>About My Work</h1>
 
-                        <a href={CV} download>
+                        <a href={require('../downloads/CV.pdf')} download>
                             <button
                                 className="about-buttons"
                                 >
