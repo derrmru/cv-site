@@ -57,7 +57,7 @@ const About = () => {
                                         <li>Clean, responsive & mobile-first web design.</li>
                                         <li>Well documented projects.</li>
                                     </ul>
-                                    <p>I have a passion for writing and developing modern, detailed, innovative and experimental web applications or software.</p>
+                                    <p>I have a passion for building and developing modern, detailed, innovative and experimental web applications or software.</p>
                                     <p>I have worked with and led large diverse teams on a range of development projects using the latest technologies.</p>
                                     <p>I am employed fulltime on a remote basis, but am open to one-off projects and freelance work.</p>
                                     <h3>Personal</h3>
