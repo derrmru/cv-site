@@ -59,7 +59,7 @@ const About = () => {
                                     </ul>
                                     <p>I have a passion for writing and developing modern, detailed, innovative and experimental web applications or software.</p>
                                     <p>I have worked with and led large diverse teams on a range of development projects using the latest technologies.</p>
-                                    <p>I primarily work fulltime on a remote basis, but am open to one-off projects and freelance work.</p>
+                                    <p>I am employed fulltime on a remote basis, but am open to one-off projects and freelance work.</p>
                                     <h3>Personal</h3>
                                     <p>I grew up in London but in recent years have adopted the 'nomad' lifestyle (I am currently to be found haunting France).</p>
                                     <h3>Contact</h3>
