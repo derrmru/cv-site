@@ -12,7 +12,6 @@ const ContactBox = () => {
                 <h4>Social</h4>
                 <div className="social-buttons">
                     <a href="https://github.com/derrmru" target="_blank" rel="noreferrer"><button>Github</button></a>
-                    <a href="https://medium.com/@pjsweeney1" target="_blank" rel="noreferrer"><button>Medium</button></a>
                 </div>
             </div>
         </div>
