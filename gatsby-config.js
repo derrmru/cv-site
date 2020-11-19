@@ -12,7 +12,7 @@ module.exports = {
     title: `Peter Sweeney`,
     author: `Peter Sweeney`,
     siteUrl: `https://thepetersweeney.com`,
-    description: `Coder - Developer`,
+    description: `Peter Sweeney is a web and software developer, with specialisms in React, Progressive Web Apps, Single Page Applications, and Gatsby JS.`,
   },
   plugins: [
     `gatsby-plugin-smoothscroll`,
