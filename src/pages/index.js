@@ -102,7 +102,8 @@ export default function Home() {
               <h4>Progressive Web App</h4>
               <h4>Google Technologies</h4>
 
-              <h3>Libraries / Frameworks</h3>
+              <h3>Libraries / Frameworks / Platforms</h3>
+              <h4>Javascript</h4>
               <h4>React JS</h4>
               <h4>Tyescript</h4>
               <h4>Gatsby</h4>
@@ -111,7 +112,7 @@ export default function Home() {
               <h4>Mongoose</h4>
               <h4>Express JS</h4>
               <h4>D3 JS</h4>
-              <h4>Vanilla JS</h4>
+              <h4>ServiceNow</h4>
 
               <h3>Get In Touch</h3>
               <ContactForm contactName="contact-home" />
