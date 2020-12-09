@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 
-const Headline = () => {
+const Headline = (props) => {
     const words = ['Web', 'Software', 'React', 'Nomad', 'PWA', 'Javascript', 'Full Stack']
     let countRef = useRef(0);
     let wordRef = useRef(0);
@@ -31,7 +31,7 @@ const Headline = () => {
                 {toBeTyped.substr(0, count)}
                 <span style={count > words[wordRef.current].length && count % 2 === 0 ? {visibility: 'hidden'} : {visibility: 'visible'}}>|</span>
             </div>
-            <div>Developer</div>
+            <div>{props.language === 'French' ? 'Développeur' : 'Developer'}</div>
         </div>
     )
 }

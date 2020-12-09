@@ -4,7 +4,7 @@ import Sidebar from "../../components/Sidebar/Sidebar"
 import Footer from '../../components/Footer/Footer'
 import './Body.css'
 
-const Body = ({ children }) => {
+const Body = (props) => {
     const [toggleMenu, setToggleMenu] = useState('inline')
     const setToggle = () => {
         toggleMenu === 'none' ?
@@ -33,13 +33,14 @@ const Body = ({ children }) => {
                 />
 
             <Sidebar 
+                language={props.language}
                 setToggle={setToggle}
                 vValue={toggleMenu}
                 />
             
             <div className="body-container">
 
-                { children }
+                { props.children }
 
                 <Footer />
             </div>

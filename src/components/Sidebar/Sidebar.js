@@ -21,7 +21,7 @@ const Sidebar = (props) => {
             <div className="sidebar-scroll">
                 <div className="sidebar-titles">
                     <h1>Peter Sweeney</h1>
-                    <h2>Developer</h2>
+                    <h2>{props.language === 'French' ? 'Développeur' : 'Developer'}</h2>
                 </div>
                 <hr />
                 <div className="sidebar-items">
@@ -30,7 +30,7 @@ const Sidebar = (props) => {
                             let words;
                             let page = pageInfo.path;
                             if (page === '/') {
-                                words = 'Home'
+                                {props.language === 'French' ? words = 'Accueil' : words = 'Home'}
                             } else if (page !== '/dev-404-page/' && page !== '/404/' && page !== '/404.html' && page !== '/schedule/' && page !== '/submitted/') {
                                 let justWords = page.toString().split('/').join(' ').split('-').join(' ').split(' ')
                                 let updateArr = [];

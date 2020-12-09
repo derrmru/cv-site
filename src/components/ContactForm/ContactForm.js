@@ -15,19 +15,19 @@ const Contact = (props) => {
                     <input type="hidden" name="form-name" value={props.contactName} />
                     <p>
                     <label>
-                        Full Name
+                        {props.language === 'French' ? 'Nom Complet' : 'Full Name'}
                         <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
                     </label>
                     </p>
                     <p>
                     <label>
-                        Email Address
+                        {props.language === 'French' ? 'Adresse Email' : 'Email Address'}
                         <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                     </label>
                     </p>
                     <p>
                     <label>
-                        Telephone
+                        {props.language === 'French' ? 'Téléphone' : 'Telephone'}
                         <input type="text" name="telephone" value={telephone} onChange={(e) => setTelephone(e.target.value)} required />
                     </label>
                     </p>
@@ -37,7 +37,7 @@ const Contact = (props) => {
                         <textarea type="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
                     </label>
                     </p>
-                    <button type="submit">Send</button>
+                    <button type="submit">{props.language === 'French' ? 'Envoyer' : 'Send'}</button>
                 </form>
             </div>
         </>

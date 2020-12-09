@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Calendar.css'
 
 //array of months for calendar UI
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const dayArr = ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
 
 //functional return of number of days in currently selected month - these are mapped out in the Calendar component
 const monthDays = (currentMonth, currentYear) => {
@@ -18,6 +19,7 @@ const Calendar = (props) => {
     const date = props.date;
     const [currentMonth, setCurrentMonth] = useState(date.getMonth());
     const [currentYear, setCurrentYear] = useState(date.getFullYear());
+    const [tDays, setTDays] = useState([]);
 
     //if incrementing through months take start and end of years into account
     const setCurrent = (num) => {
@@ -39,6 +41,18 @@ const Calendar = (props) => {
             }
         }
     }
+
+    //calculate start day of the week in current Month
+    useEffect(() => {
+        let startDay = new Date(1, currentMonth, currentYear).getDay();
+
+        let arr = [];
+        for (let i = 0; i < dayArr.length; i++) {
+            arr.push(dayArr[(i + startDay) % 7])
+        }
+        setTDays(arr)
+
+    }, [currentMonth, currentYear])  
 
     return (
         <div className="calendar">
@@ -62,7 +76,7 @@ const Calendar = (props) => {
                         <hr />
                         <div className="day-names">
                             {
-                                ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map((day, i) => {
+                                tDays.map((day, i) => {
                                     return <div key={"day-name" + i} className="day-name">{day}</div>
                                 })
                             }

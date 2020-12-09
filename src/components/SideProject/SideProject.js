@@ -7,9 +7,9 @@ const SideProject = (props) => {
             <p>
                 <strong>Application:</strong> <a href={props.projectLink} target="_blank" rel="noreferrer">{props.title}</a>
                 <br />
-                <strong>Date:</strong> {props.date}
+                <strong>{props.language === 'French' ? 'La Date' : 'Date'}:</strong> {props.date}
                 <br />
-                <strong>Specialisms:</strong> {props.specialisms.map((specialism, i) => {
+                <strong>{props.language === 'French' ? 'Spécialités' : 'Specialisms'}:</strong> {props.specialisms.map((specialism, i) => {
                        return i === props.specialisms.length - 1 ? 
                                 <span key={'specialisms' + i}>{specialism}</span> : 
                                     <span key={'specialisms' + i}>{specialism} | </span>
@@ -19,11 +19,11 @@ const SideProject = (props) => {
                 props.repository && 
                     <>
                         <br />
-                        <strong><a href={props.repository} target="_blank" rel="noreferrer">Go To Repository</a></strong>
+                        <strong><a href={props.repository} target="_blank" rel="noreferrer">{props.language === 'French' ? 'Aller au dépôt' : 'Go To Repository'}</a></strong>
                     </>
                 }
                 <br />
-                <strong>Description:</strong> {props.description}
+                <strong>{props.language === 'French' ? 'La description' : 'Description'}:</strong> {props.description}
             </p>
             <p>________</p>
         </div>
