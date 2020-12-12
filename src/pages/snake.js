@@ -9,7 +9,8 @@ const SnakePage = () => {
         <div className='gatsby-snake-container'>
             <Body>
                 <SEO title="Snake - reusable React component" description="Classic mobile game, Snake, built as reusable React Component."/>
-                <h1>Snake - With React JS</h1>
+                <h1>Snake</h1>
+                <h2>With React JS</h2>
                 <Snake 
                     color1="var(--the-black)"
                     color2="var(--main-color)"
