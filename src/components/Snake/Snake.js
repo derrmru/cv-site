@@ -220,7 +220,7 @@ const Snake = (props) => {
                 document.removeEventListener('keydown', handleKeydown)
             };
         }
-    }, [width, dim, chunk, snake, direction, points, fruit, game])
+    }, [dim, chunk, snake, direction, points, fruit, game])
 
     return (
         <div className="snake-container" id="snake-container">
