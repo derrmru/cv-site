@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(() => {
     const userLang = window.navigator.language || window.navigator.userLanguage; 
     (userLang === 'fr' || userLang === 'fr-fr') ? setLanguage('French') : setLanguage('English')
-  })
+  }, [language])
 
   return (
     <div className="homepage"> 
