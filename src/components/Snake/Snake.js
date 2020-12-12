@@ -8,7 +8,6 @@ const Snake = (props) => {
     const [fruit, setFruit] = useState(26);
     const [points, setPoints] = useState(0);
     const [game, setGame] = useState(false);
-    const width = window.innerWidth;
     const speedRef = useRef(100);
     const [snake, setSnake] = useState([
         {
@@ -52,6 +51,7 @@ const Snake = (props) => {
 
     useEffect(() => {
         //determine relative dimensions of game portal
+        const width = window.innerWidth;
         if (width >= 800) {
             setDim(width * .35)
         } else if (width < 800) {
