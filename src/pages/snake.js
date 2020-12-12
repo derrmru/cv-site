@@ -20,6 +20,7 @@ const SnakePage = () => {
                 <div className="snake-page-text">
                     <strong>Repository:</strong> <a className="snake-links" href="https://github.com/derrmru/react-snake" target="_blank" rel="no-referrer">JS version</a> | <a className="snake-links" href="https://github.com/derrmru/react-snake-404" target="_blank" rel="no-referrer">Typescript version</a>
                     <p><strong>Description: </strong></p>
+                    <p>Classic (and addictive) Snake game - built as a reusable react component.</p>
                     <p><strong>Usage: </strong></p>
                     <pre>
                     <code>
