@@ -19,18 +19,21 @@ const SnakePage = () => {
                 <hr />
                 <div className="snake-page-text">
                     <strong>Repository:</strong> <a className="snake-links" href="https://github.com/derrmru/react-snake" target="_blank" rel="no-referrer">JS version</a> | <a className="snake-links" href="https://github.com/derrmru/react-snake-404" target="_blank" rel="no-referrer">Typescript version</a>
+                    <p>Available on NPM <a className="snake-links" href="https://www.npmjs.com/package/snake-game-react" target="_blank" rel="no-referrer">here</a>.</p>
                     <p><strong>Description: </strong></p>
                     <p>Classic (and addictive) Snake game - built as a reusable react component.</p>
+                    <p><strong>Installation:</strong></p>
+                    <pre>
+                        <code>
+                            &nbsp;npm i snake-game-react --save
+                        </code>
+                    </pre>
                     <p><strong>Usage: </strong></p>
                     <pre>
                     <code>
-
-                        <p>
                             &nbsp;import React from 'react';<br />
-                            &nbsp;import Snake from './components/Snake/Snake';<br />
-                            &nbsp;import './App.css';
-                        </p>
-                        <p>
+                            &nbsp;import Snake from 'snake-game-react';<br />
+                            <p></p>
                             &nbsp;const App = () =&gt; &#123; <br />
                             &nbsp;return (<br />
                                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="App"&gt;<br />
@@ -42,10 +45,8 @@ const SnakePage = () => {
                                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
                                 &nbsp;&nbsp;);<br />
                                 &nbsp; &#125;<br />
-                        </p>
-                        <p>
+                            <p></p>
                             &nbsp;export default App;
-                        </p>
                     </code>
                     </pre>
                     <p style={{marginTop: '20px'}}><strong>Props: </strong></p>
@@ -55,6 +56,7 @@ const SnakePage = () => {
                         <div className="table-cell">backgroundColor</div><div className="table-cell">string</div>
                     </div>
                 </div>
+                <hr />
             </Body>
         </div>
     )
