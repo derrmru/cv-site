@@ -1,7 +1,7 @@
 import React from 'react'
 import Body from "../templates/Body/Body"
 import SEO from '../components/SEO/SEO'
-import Snake from '../components/Snake/Snake'
+import Snake from 'snake-game-react'
 import './snake.css'
 
 const SnakePage = () => {
@@ -18,8 +18,8 @@ const SnakePage = () => {
                     />
                 <hr />
                 <div className="snake-page-text">
-                    <strong>Repository:</strong> <a className="snake-links" href="https://github.com/derrmru/react-snake" target="_blank" rel="no-referrer">JS version</a> | <a className="snake-links" href="https://github.com/derrmru/react-snake-404" target="_blank" rel="no-referrer">Typescript version</a>
-                    <p>Available on NPM <a className="snake-links" href="https://www.npmjs.com/package/snake-game-react" target="_blank" rel="no-referrer">here</a>.</p>
+                    <strong>Repository:</strong> <a className="snake-links" href="https://github.com/derrmru/react-snake" target="_blank" rel="noreferrer">JS version</a> | <a className="snake-links" href="https://github.com/derrmru/react-snake-404" target="_blank" rel="noreferrer">Typescript version</a>
+                    <p>Available on NPM <a className="snake-links" href="https://www.npmjs.com/package/snake-game-react" target="_blank" rel="noreferrer">here</a>.</p>
                     <p><strong>Description: </strong></p>
                     <p>Classic (and addictive) Snake game - built as a reusable react component.</p>
                     <p><strong>Installation:</strong></p>
