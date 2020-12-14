@@ -80,6 +80,16 @@ export default function Home() {
 
               <SideProject 
                 language={language}
+                title='Snake'
+                projectLink="https://thepetersweeney.com/snake"
+                date={language === 'French' ? "Decembre 2020" : "December 2020"}
+                specialisms={['reactjs', 'typescript', 'game development', 'netlify']}
+                repository="https://github.com/derrmru/react-snake"
+                description="A classic game, built as reusable react component. Very lightweight, easy to install and get up and running."
+                />
+
+              <SideProject 
+                language={language}
                 title='Mine The News (proof of concept)'
                 projectLink="https://minethenews.com/"
                 date={language === 'French' ? "Septembre 2020" : "September 2020"}
