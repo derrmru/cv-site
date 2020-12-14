@@ -1,7 +1,7 @@
 import React from 'react'
 import Body from "../templates/Body/Body"
 import SEO from '../components/SEO/SEO'
-import Snake from 'snake-game-react'
+import Snake from '../components/Snake/Snake'
 import './snake.css'
 
 const SnakePage = () => {
