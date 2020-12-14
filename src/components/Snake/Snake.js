@@ -9,6 +9,7 @@ const Snake = (props) => {
     const [points, setPoints] = useState(0);
     const [game, setGame] = useState(false);
     const speedRef = useRef(100);
+    let width;
     const [snake, setSnake] = useState([
         {
             direction: 'right', 
@@ -67,7 +68,7 @@ const Snake = (props) => {
 
     useEffect(() => {
         //determine relative dimensions of game portal
-        const width = window.innerWidth;
+        width = window.innerWidth;
         if (width >= 800) {
             setDim(width * .35)
         } else if (width < 800) {
@@ -217,7 +218,7 @@ const Snake = (props) => {
                 document.removeEventListener('keydown', handleKeydown)
             };
         }
-    }, [turn, dim, chunk, snake, direction, points, fruit, game])
+    }, [turn, width, dim, chunk, snake, direction, points, fruit, game])
 
     return (
         <div className="snake-container" id="snake-container">
