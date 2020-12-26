@@ -9,7 +9,7 @@ const Snake = (props) => {
     const [points, setPoints] = useState(0);
     const [game, setGame] = useState(false);
     const speedRef = useRef(100);
-    let width;
+    const width = useRef(0);
     const [snake, setSnake] = useState([
         {
             direction: 'right', 
@@ -68,11 +68,11 @@ const Snake = (props) => {
 
     useEffect(() => {
         //determine relative dimensions of game portal
-        width = window.innerWidth;
-        if (width >= 800) {
-            setDim(width * .35)
-        } else if (width < 800) {
-            setDim(width * .9);
+        width.current = window.innerWidth;
+        if (width.current >= 800) {
+            setDim(width.current * .35)
+        } else if (width.current < 800) {
+            setDim(width.current * .9);
         }
         setChunk(dim / 20)
 

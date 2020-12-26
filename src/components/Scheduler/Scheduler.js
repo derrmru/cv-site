@@ -17,6 +17,7 @@ const Scheduler = () => {
     const [thankYou, setThankYou] = useState(false);
 
     const updateCalendar = (name, selectedDate) => {
+        console.log(selectedDate)
         setDate(selectedDate)
         setSelectedTime(undefined) //This resets the booking form to time selector if a new date is selected
         setLoadingTimes(true)

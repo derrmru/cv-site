@@ -96,13 +96,11 @@ const Calendar = (props) => {
                                                     className="day"
                                                     key={'day' + i}
                                                     onClick={() => {
-                                                        if (isAvailable) {
-                                                            return props.updateCalendar(props.name, new Date(currentYear, currentMonth, day))
-                                                        }
+                                                        isAvailable && props.updateCalendar(props.name, new Date(currentYear, currentMonth, day))
                                                     }}
-                                                    style={ (day === date.getDate() && currentMonth === date.getMonth()) ? 
+                                                    style={ (day === date.getDate() && currentMonth === date.getMonth()) ? //if the date is the selected date
                                                                 {backgroundColor: '#ebebeb', color: 'var(--the-black)'} : 
-                                                                    (new Date(currentYear, currentMonth, day) <= new Date() || !isAvailable) ?
+                                                                    (new Date(currentYear, currentMonth, day) <= new Date() || !isAvailable) ? //if the date is before todays date
                                                                         {color: '#999', backgroundColor: 'white', cursor: 'default'} :
                                                                         {width: '14%'}}
                                                     >
