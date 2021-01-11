@@ -65,11 +65,13 @@ const Scheduler = () => {
     }
 
     useEffect(() => {
+        console.log(date.getFullYear())
         let data = {"year": date.getFullYear()};
-        $.post("https://script.google.com/macros/s/AKfycbxbzmQRo75bCz-Q8R4morQYrc5BdMKSLoyEHa0Psm-Zc30FeLmR/exec", 
+        $.post("https://script.google.com/macros/s/AKfycbyxj8CwoOIIIilWFsINllvkZsSW-fyLs2pxzTckl91oTAvLnnuFVfAKnw/exec", 
             data, 
             async (res, status) => {
                 let result = await JSON.parse(res);
+                console.log(result)
                     setAvailableDates(result)
                 }).done(() => {
                     console.log('complete')
@@ -109,8 +111,8 @@ const Scheduler = () => {
                                 :
                                 
                                 thankYou ? <ThankYou 
-                                                                selectedTime={selectedTime}
-                                                                />
+                                                selectedTime={selectedTime}
+                                                />
 
                                     :
 
