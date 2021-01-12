@@ -33,6 +33,17 @@ export default function Home() {
 
               <Experience 
                 language={language}
+                title='Podogo Registration Form'
+                projectLink="https://registration.podogo.com/"
+                client="Podogo"
+                clientLink="https://www.podogo.com/"
+                date={language === 'French' ? "Janvier 2020" : "January 2020"}
+                specialisms={['reactjs', 'create-react-app', 'SignatureCanvas']}
+                repository="https://github.com/derrmru/Podogo-Registration-Form"
+                />
+
+              <Experience 
+                language={language}
                 title='You Wear It Best'
                 projectLink="https://you-wear-it-best.netlify.app/"
                 client="You Wear It Best"
