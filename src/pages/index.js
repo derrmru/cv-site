@@ -33,6 +33,17 @@ export default function Home() {
 
               <Experience 
                 language={language}
+                title='Book a Virtual Appointment'
+                projectLink="https://appointments.londonfootandanklesurgery.co.uk/"
+                client="London Foot & Ankle Surgery"
+                clientLink="https://www.londonfootandanklesurgery.co.uk/"
+                date={language === 'French' ? "Janvier 2021" : "January 2021"}
+                specialisms={['reactjs', 'typescript', 'google web apps', 'google apps script']}
+                repository="https://github.com/derrmru/lfas-virtual-consults-II"
+                />
+
+              <Experience 
+                language={language}
                 title='Podogo Registration Form'
                 projectLink="https://registration.podogo.com/"
                 client="Podogo"
@@ -73,18 +84,6 @@ export default function Home() {
                 date={language === 'French' ? "Mai 2020" : "May 2020"}
                 specialisms={['reactjs', 'google web apps', 'google apps script']}
                 repository="https://github.com/derrmru/Podogo-Registration-Form"
-                />
-
-              
-              <Experience 
-                language={language}
-                title='Book a Virtual Appointment'
-                projectLink="https://appointments.londonfootandanklesurgery.co.uk/"
-                client="London Foot & Ankle Surgery"
-                clientLink="https://www.londonfootandanklesurgery.co.uk/"
-                date={language === 'French' ? "Mars 2020" : "March 2020"}
-                specialisms={['reactjs', 'google web apps', 'google apps script']}
-                repository="https://github.com/derrmru/LFAS-Virtual-Consultations"
                 />
 
               <h3>Side Projects</h3>
