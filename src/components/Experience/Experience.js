@@ -22,7 +22,7 @@ const Experience = (props) => {
                     <>
                         <br />
                         <strong><a href={props.repository} target="_blank" rel="noreferrer">
-                            {props.language === 'French' ? 'Aller eu dépôt' : 'Go To Repository'}
+                            {props.language === 'French' ? 'Aller au dépôt' : 'Go To Repository'}
                         </a></strong>
                     </>
                 }
