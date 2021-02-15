@@ -13,7 +13,7 @@ const SnakePage = () => {
                 <h2 className="snake-h2">With React JS</h2>
                 <Snake 
                     color1="var(--the-black)"
-                    color2="var(--main-color)"
+                    color2="rgb(140, 140, 140)"
                     backgroundColor="var(--the-white)"
                     />
                 <hr />
