@@ -3,9 +3,9 @@
     width: 20%;
     background-color: var(--the-black);
     margin: 0;
-    -webkit-box-shadow: 10px 0px 22px -6px rgba(0,0,0,0.5);
+    /*-webkit-box-shadow: 10px 0px 22px -6px rgba(0,0,0,0.5);
     -moz-box-shadow: 10px 0px 22px -6px rgba(0,0,0,0.5);
-    box-shadow: 10px 0px 22px -6px rgba(0,0,0,0.5);
+    box-shadow: 10px 0px 22px -6px rgba(0,0,0,0.5);*/
     position: fixed;
     top: 0;
     left: 0;
