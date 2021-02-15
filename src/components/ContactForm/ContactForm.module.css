@@ -43,7 +43,7 @@ form button {
     width: 100%;
     margin: auto;
     text-align: center;
-    border: none;
+    border: 1px solid var(--the-black);
     cursor: pointer;
     margin: 0 0 2vh 0;
     background-color: var(--main-color);
