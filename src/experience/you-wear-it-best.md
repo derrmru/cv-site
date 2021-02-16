@@ -1,6 +1,7 @@
 ---
 type: 'experience'
-date: "15/02/2020"
+slug: /projects/you-wear-it-best
+date: "01/08/2020"
 title: "You Wear It Best (In Progress)"
 projectLink: "https://you-wear-it-best.netlify.app/"
 client: "You Wear It Best"
@@ -8,6 +9,15 @@ clientLink: "https://you-wear-it-best.netlify.app/about"
 period: ["août 2020", "August 2020"]
 specialisms: ['reactjs', 'gatsbyjs', 'netlifycms']
 repository: "https://github.com/derrmru/you-wear-it-best"
+description: "Portfolio and Web Shop for Amsterdam based boutique fashion brand, You Wear It Best."
 ---
 
-This is a test
+### You Wear It Best
+
+Portfolio and web shop for Amsterdam based boutique fashion brand, You Wear It Best.
+
+### Used Technologies and Libraries
+
+- [Gatsby JS](https://www.gatsbyjs.com/)
+- [Netlify](https://www.netlifycms.org/)
+- [React](https://reactjs.org/)

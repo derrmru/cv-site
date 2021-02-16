@@ -1,0 +1,42 @@
+.projectBody {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.projectMain {
+    width: 60%;
+    text-align: left;
+}
+
+.projectTitle {
+    margin-top: 0;
+}
+
+.projectDetails {
+    width: 30%;
+    border: 1px solid var(--the-black);
+    padding: 0 10px 30px 10px;
+    text-align: left;
+}
+
+.pdHeader {
+    padding-bottom: 10px;
+    width: 80%;
+    border-bottom: 1px dotted var(--the-black);
+}
+
+.pdContactContainer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.pdContact {
+    padding-top: 20px;
+    width: 80%;
+    border-top: 1px dotted var(--the-black);
+}

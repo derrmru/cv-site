@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import Body from "../templates/Body/Body"
 import SEO from "../components/SEO/SEO"
 import Headline from "../components/Headline/Headline"
+//import MatrixHeadline from '../components/MatrixHeadline/MatrixHeadline'
 import DownwardArrow from "../components/Icons/DownwardArrow/DownwardArrow"
 import Experiences from "../components/Experiences/Experiences"
 import SideProjects from "../components/SideProjects/SideProjects"
@@ -13,15 +14,15 @@ export default function Home() {
   const [year, setYear] = useState(new Date().getFullYear().toString())
 
   useEffect(() => {
-    const userLang = window.navigator.language || window.navigator.userLanguage; 
+    const userLang = window.navigator.language || window.navigator.userLanguage;
     (userLang === 'fr' || userLang === 'fr-fr') ? setLanguage('French') : setLanguage('English')
   }, [language])
 
   return (
-    <div className="homepage"> 
+    <div className="homepage">
       <Body language={language}>
         <SEO title={language === 'French' ? "Accueil" : "Home"} />
-        
+
         <div className="huge-title">
           <Headline language={language} />
           <DownwardArrow linkTo='#section-2' />
@@ -30,29 +31,29 @@ export default function Home() {
         <div id="section-2" className="section-2-container">
           <div className="section-2">
             <div className="left-section">
-            <div
-              className="year-selector"
+              <div
+                className="year-selector"
               >
-              <button
-                className="year-select-button"
-                onClick={() => setYear('2021')}
+                <button
+                  className="year-select-button"
+                  onClick={() => setYear('2021')}
                 >
                   2021
               </button>
-              <button
-                className="year-select-button"
-                onClick={() => setYear('2020')}
+                <button
+                  className="year-select-button"
+                  onClick={() => setYear('2020')}
                 >
                   2020
               </button>
-            </div>
-            <Experiences 
-              language={language}
-              year={year}
+              </div>
+              <Experiences
+                language={language}
+                year={year}
               />
-            <SideProjects 
-              language={language}
-              year={year}
+              <SideProjects
+                language={language}
+                year={year}
               />
 
             </div>

@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react'
+import React, { useState, useEffect, useLayoutEffect } from 'react'
 import MenuButton from "../../components/MenuButton/MenuButton"
 import Sidebar from "../../components/Sidebar/Sidebar"
 import Footer from '../../components/Footer/Footer'
@@ -8,7 +8,7 @@ const Body = (props) => {
     const [toggleMenu, setToggleMenu] = useState('inline')
     const setToggle = () => {
         toggleMenu === 'none' ?
-            setToggleMenu('inline') :
+            setToggleMenu('flex') :
                 setToggleMenu('none')
     }
 
@@ -17,12 +17,20 @@ const Body = (props) => {
       function updateSize() {
         window.innerWidth < 1025 ? 
             setToggleMenu('none') :
-                setToggleMenu('inline')
+                setToggleMenu('flex')
       }
       window.addEventListener('resize', updateSize);
       updateSize();
       return () => window.removeEventListener('resize', updateSize);
     }, []);
+
+
+    //language
+    const [language, setLanguage] = useState('English')
+    useEffect(() => {
+        const userLang = window.navigator.language || window.navigator.userLanguage;
+        (userLang === 'fr' || userLang === 'fr-fr') ? setLanguage('French') : setLanguage('English')
+      }, [language])
 
     return (
         <>
