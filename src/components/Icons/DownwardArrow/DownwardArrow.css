@@ -1,6 +1,6 @@
 .downward-arrow {
     position: absolute;
-    bottom: 40px;
+    bottom: 10vh;
     width: 50px;
     margin: auto;
     display: flex;
@@ -24,10 +24,12 @@
     transition: 1s;
 }
 
-.d-icon:hover {
-    cursor: pointer;
-    height: 40px;
-    background-color: var(--the-black);
+@media (hover:hover) {
+    .d-icon:hover {
+        cursor: pointer;
+        height: 40px;
+        background-color: var(--the-black);
+    }
 }
 
 .d-arrow {

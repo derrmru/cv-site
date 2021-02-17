@@ -57,6 +57,16 @@ code {
     cursor: text;
 }
 
+ul {
+    list-style-type: '> ';
+    margin-left: 0;
+    text-align: left;
+}
+
+/**
+*homepage first section
+*/
+
 .homepage {
     display: flex;
     flex-direction: row;
@@ -69,10 +79,14 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
+    font-size: 70px;
     color: var(--the-black);
     position: relative;
 }
+
+/**
+*about section
+*/
 
 .section-2-container {
     width: 100%;
@@ -82,62 +96,123 @@ code {
 }
 
 .section-2 {
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin: 80px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-2-image {
+    width: 50%;
+}
+
+.section-2-writeup {
+    width: 40%;
     text-align: left;
+    border-left: 1px dotted var(--the-black);
+}
+
+.section-2-text {
+    width: 80%;
+    margin: 20px auto;
 }
 
 .section-2 h3 {
     font-size: 24px;
 }
 
-.title {
-    font-size: 40px;
-    text-align: left;
-    margin: 20px 0 0 0;
+.find-out-more {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+/**
+*portfolio section
+*/
+
+.homepage-section-3 {
     width: 100%;
 }
 
-.left-section {
-    width: 60%;
-}
-
-.right-section {
-    width: 40%;
-}
-
-.right-section h4 {
-    font-weight: 100;
-}
-
-.year-selector {
-    border-top: 1px solid var(--the-black);
-    border-bottom: 1px solid var(--the-black);
+.homepage-3-container {
     width: 80%;
-    padding: 5px 0;
+    margin: auto;
+    text-align: left;
 }
 
-.year-select-button {
-    margin: 5px;
-    padding: 15px;
-    cursor: pointer;
-    transition: .2s;
-    color: var(--the-black);
-    border: none;
-    background-color: var(--main-color);
-    border-radius: 5px;
-    text-decoration: underline;
+.port-title {
+    margin: 40px 0 0;
+    font-size: 24px;
 }
 
-@media (hover:hover) {
-    .year-select-button:hover {
-      background-color: var(--the-black);
-      color: white;
-    }
-  }
+.portfolio-card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.smp-link {
+    width: 100%;
+    margin: 40px 0 60px;
+    text-align: center;
+}
+
+/**
+*contact section
+*/
+
+.homepage-contact-container {
+    background-color: var(--the-white);
+    padding: 40px 0 40px 0;
+}
+
+.home-contact-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.home-contact-writing {
+    width: 35%;
+    text-align: left;
+    border-right: 1px dotted var(--the-black);
+    border-left: 1px dotted var(--the-black);
+    padding: 0 10px;
+}
+
+.home-new-business {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-start {
+    flex-shrink: 3;
+    border-bottom: 1px dotted var(--the-black);
+    padding-bottom: 150px;
+    margin-bottom: 20px;
+}
+
+.home-contact {
+    width: 55%;
+    margin: 0 auto 20px;
+    background-color: var(--the-white);
+    text-align: left;
+}
+
+.contact-title {
+    margin: 0;
+    font-size: 24px;
+}
 
 @media only screen and (max-width: 800px) {
     .huge-title {
@@ -148,7 +223,11 @@ code {
 @media only screen and (max-width: 567px) {
     .huge-title {
         font-size: 60px;
-        height: 90vh;
+        height: 100vh;
+    }
+
+    .headline-container {
+        margin-bottom: 10vh;
     }
 
     .section-2 {
@@ -159,15 +238,32 @@ code {
         margin: auto;
     }
 
-    .left-section {
-        width: 100%;
+    .section-2-image {
+        width: 98%;
     }
-    
-    .right-section {
+
+    .section-2-writeup {
+        width: 94%;
+        text-align: left;
+        border-left: none;
+    }
+
+    .home-contact-content {
         width: 100%;
     }
 
-    .year-selector {
-        width: 100%;
+    .home-contact-writing {
+        width: 90%;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+    }
+
+    .contact-start {
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+    }
+
+    .home-contact {
+        width: 90%;
     }
 }

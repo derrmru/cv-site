@@ -36,7 +36,7 @@ const Projects = (props) => {
                 title="Portfolio" 
                 description="A Portfolio of my previous work."
                 />
-            <h1>Portfolio</h1>
+            <h1 className="projects-page-title">Portfolio</h1>
             <div className="projects-container">
                 {
                     projects.sort((a, b) => {

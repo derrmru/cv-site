@@ -9,7 +9,7 @@ clientLink: "https://londonfootandanklesurgery.co.uk/"
 period: ["Janvier 2021", "January 2021"]
 specialisms: ['reactjs', 'typescript', 'google web apps', 'google apps script']
 repository: "https://github.com/derrmru/lfas-virtual-consults-II"
-description: "Arrange a digital or virtual consultation with your doctor online, built for The London Foot & Ankle Surgery in London."
+description: "Arrange a virtual consultation with your doctor, built for The London Foot & Ankle Surgery."
 ---
 
 ### Installation

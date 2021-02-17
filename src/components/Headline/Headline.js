@@ -21,7 +21,7 @@ const Headline = (props) => {
                 setCount(countRef.current)
             }
 
-        }, 400);
+        }, 300);
         return () => clearInterval(interval);
       }, [toBeTyped.length, words]);
 
