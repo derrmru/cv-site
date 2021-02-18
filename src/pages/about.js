@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import Body from "../templates/Body/Body"
 import SEO from '../components/SEO/SEO'
 import DownWardArrow from "../components/Icons/DownwardArrow/DownwardArrow"
+import Decypher from '../components/Decypher/Decypher'
 import './about.css'
 
 const About = () => {
@@ -30,7 +31,7 @@ const About = () => {
             <div className="about-background">
                 <div className="about-text-1">
                     <div className="about-title">
-                        <h1>About My Work</h1>
+                        <h1><Decypher words={['About My Work']} /></h1>
 
                         <a href={require('../downloads/cv.pdf')} download>
                             <button
