@@ -1,7 +1,7 @@
 .downwardArrow {
     position: absolute;
     bottom: 10vh;
-    width: 50px;
+    width: 45px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -13,8 +13,8 @@
 }
 
 .dIcon {
-    width: 40px;
-    height: 50px;
+    width: 30px;
+    height: 40px;
     border: 1px solid var(--the-black);
     border-radius: 10px;
     display: flex;
@@ -24,21 +24,21 @@
     transition: 1s;
 }
 
-@media (hover:hover) {
-    .dIcon:hover {
-        cursor: pointer;
-        height: 40px;
-        background-color: var(--the-black);
-    }
-}
-
 .dArrow {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-right: 2px solid var(--the-white);
     border-bottom: 2px solid var(--the-white);
     transform: rotate(45deg);
     transition: 1s;
+}
+
+@media (hover:hover) {
+    .dIcon:hover {
+        cursor: pointer;
+        height: 30px;
+        background-color: var(--the-black);
+    }
 }
 
 @media only screen and (max-width: 1025px) {
