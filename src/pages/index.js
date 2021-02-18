@@ -98,7 +98,7 @@ export default function Home() {
               }
             </div>
             <div className="smp-link">
-              <Link to="/projects"><h3>See More Projects</h3></Link>
+              <Link to="/projects"><h3>Go To Portfolio</h3></Link>
             </div>
           </div>
         </div>

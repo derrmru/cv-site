@@ -5,7 +5,7 @@ import Body from '../templates/Body/Body'
 import './projects.css'
 
 const Projects = (props) => {
-    const years = ['', '2021', '2020'];
+    const years = ['2021', '2020', ''];
     const [date, setDate] = useState('')
     const data = useStaticQuery(graphql`
         query projectsQuery {
