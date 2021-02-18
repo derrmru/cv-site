@@ -8,7 +8,10 @@ const SnakePage = () => {
     return (
         <div className='gatsby-snake-container'>
             <Body>
-                <SEO title="Snake - reusable React component" description="Classic mobile game, Snake, built as reusable React Component."/>
+                <SEO 
+                    title="Snake - reusable React component" 
+                    description="Classic mobile game, Snake, built as reusable React Component."
+                    />
                 <h1>Snake</h1>
                 <h2 className="snake-h2">With React JS</h2>
                 <Snake 

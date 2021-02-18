@@ -42,7 +42,9 @@ export default function Home() {
   return (
     <div className="homepage">
       <Body language={language}>
-        <SEO title={language === 'French' ? "Accueil" : "Home"} />
+        <SEO 
+          title={language === 'French' ? "Accueil" : "Home"} 
+          />
 
         <div className="huge-title">
           <MatrixHeader 

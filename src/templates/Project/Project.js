@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Body from '../Body/Body'
+import SEO from '../../components/SEO/SEO'
 import ContactForm from '../../components/ContactForm/ContactForm'
 import style from './Project.module.css'
 
@@ -9,6 +10,10 @@ const Project = ({ data }) => {
     console.log(front)
     return (
         <Body>
+          <SEO 
+            title={front.title}
+            description={'Selected Portfolio Item: ' + front.description}
+            />
           <div className={style.projectBody}>
             <div className={style.projectMain}>
               <h1 className={style.projectTitle}>{front.title}</h1>

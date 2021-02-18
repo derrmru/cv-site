@@ -8,7 +8,10 @@ import './contact.css'
 const Contact = () => {
     return (
         <Body>
-            <SEO title="Get In Touch" />
+            <SEO 
+                title="Get In Touch" 
+                description="Get in touch to discuss your project. Email, schedule a call or find me online."
+                />
 
             <h1>Get In Touch</h1>
             <div className="contact-container">

@@ -22,7 +22,10 @@ const About = () => {
 
     return (
         <Body>
-            <SEO title="About" />
+            <SEO 
+                title="About" 
+                description="Headlines: Europe-based remote worker. Full stack web development. Clean, responsive & mobile-first web design. Well documented projects."
+                />
 
             <div className="about-background">
                 <div className="about-text-1">
