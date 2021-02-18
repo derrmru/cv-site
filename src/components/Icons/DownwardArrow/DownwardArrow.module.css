@@ -1,4 +1,4 @@
-.downward-arrow {
+.downwardArrow {
     position: absolute;
     bottom: 10vh;
     width: 50px;
@@ -12,7 +12,7 @@
     border: none;
 }
 
-.d-icon {
+.dIcon {
     width: 40px;
     height: 50px;
     border: 1px solid var(--the-black);
@@ -25,14 +25,14 @@
 }
 
 @media (hover:hover) {
-    .d-icon:hover {
+    .dIcon:hover {
         cursor: pointer;
         height: 40px;
         background-color: var(--the-black);
     }
 }
 
-.d-arrow {
+.dArrow {
     width: 15px;
     height: 15px;
     border-right: 2px solid var(--the-white);

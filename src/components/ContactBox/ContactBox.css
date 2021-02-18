@@ -26,9 +26,11 @@
     transition: 0.5s;
 }
 
-.contact-options button:hover {
-    background-color: var(--the-black);
-    color: var(--the-white);
+@media (hover:hover) {
+    .contact-options button:hover {
+        background-color: var(--the-black);
+        color: var(--the-white);
+    }
 }
 
 .social-buttons {

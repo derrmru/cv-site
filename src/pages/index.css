@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;400&display=swap');
+@font-face {
+    font-family: 'Rokkitt';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf');
+  }
 
 :root {
     --the-white: #faf8f6;

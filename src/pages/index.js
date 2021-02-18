@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import designImage from '../images/Laptop.svg'
-import { Link, useStaticQuery } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import Body from "../templates/Body/Body"
 import SEO from "../components/SEO/SEO"
 import MatrixHeader from "../components/MatrixHeader/MatrixHeader"
