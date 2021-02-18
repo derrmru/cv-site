@@ -13,6 +13,8 @@ const DownwardArrow = (props) => {
             onClick={() => scrollTo(props.linkTo)}
             onMouseEnter={() => setMouse(true)}
             onMouseLeave={() => setMouse(false)}
+            onTouchStart={() => setTimeout(true)}
+            onTouchEnd={() => setTimeout(true)}
             >
             <div className={style.dIcon}>
                 <div className={style.dArrow} style={mouse ? 

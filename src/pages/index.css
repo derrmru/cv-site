@@ -227,12 +227,12 @@ ul {
 
 @media only screen and (max-width: 567px) {
     .huge-title {
-        font-size: 60px;
+        font-size: 50px;
         height: 100vh;
     }
 
     .headline-container {
-        margin-bottom: 10vh;
+        margin-bottom: 15vh;
     }
 
     .section-2 {
