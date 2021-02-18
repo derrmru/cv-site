@@ -55,7 +55,7 @@ export default function Home() {
         <div id="section-2" className="section-2-container">
           <div className="section-2">
             <div className="section-2-image">
-              <img src={designImage} alt="creative computing icon" width="100%" />
+              <img src={designImage} alt="creative computing icon" width="100%" height="auto" />
             </div>
             <div className="section-2-writeup">
               <div className="section-2-text">
