@@ -57,19 +57,21 @@ export default function Home() {
         <div id="section-2" className="section-2-container">
           <div className="section-2">
             <div className="section-2-image">
-              <img src={designImage} alt="creative computing icon" width="100%" height="auto" />
+              <div className="yellow-dot"></div>
+              <div className="red-dot"></div>
+              <img className="computer-image" src={designImage} alt="creative computing icon" />
             </div>
             <div className="section-2-writeup">
               <div className="section-2-text">
-                <h3>ABOUT</h3>
-                <p>I create smart technology solutions, interactive productivity applications & interfaces for brands, businesses and people.</p>
-                <p>At the intersection of precision technology and creative artistry, I design & build efficient and scalable IT, as well as pixel-perfect brand representation with critical interaction points that your entire business can depend upon.</p>
+                <h3>What I Do</h3>
+                <p>I create innovative digital solutions, interactive productivity applications & interfaces for businesses, brands and individuals.</p>
+                <p>At the intersection of precision technology and creative artistry, I design, develop & build efficient and scalable IT and pixel-perfect brand representation.</p>
                 <h3>Services</h3>
                 <ul>
-                  <li>UX & BRAND STRATEGY</li>
-                  <li>INTERFACE DESIGN & PROTOTYPING</li>
-                  <li>E-COMMERCE ARCHITECTURE</li>
-                  <li>PLATFORM ADDONS & PWA</li>
+                  <li>UI DESIGN - WIREFRAMING & PROTOTYPING</li>
+                  <li>UI / UX / FRONT END DEVELOPMENT</li>
+                  <li>FULL STACK WEB & APPLICATION DEVELOPMENT</li>
+                  <li>BESPOKE PRODUCTIVITY APPLICATIONS, PROCESS AUTOMATION, REPORTING & ANALYTICS</li>
                 </ul>
                 <div className="find-out-more">
                   <Link to="/about">Find Out More</Link>

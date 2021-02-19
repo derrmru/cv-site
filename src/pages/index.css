@@ -66,7 +66,12 @@ code {
 ul {
     list-style-type: '> ';
     margin-left: 0;
+    padding-left: 12px;
     text-align: left;
+}
+
+li {
+    margin: 10px 0;
 }
 
 /**
@@ -113,6 +118,35 @@ ul {
 
 .section-2-image {
     width: 50%;
+    position: relative;
+}
+
+.computer-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.yellow-dot {
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background-color: rgba(76,171,112,.2);
+    mix-blend-mode: multiply;
+}
+
+.red-dot {
+    position: absolute;
+    bottom: 9%;
+    right: 9%;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: rgba(252,171,112,.2);
+    mix-blend-mode: multiply;
 }
 
 .section-2-writeup {
