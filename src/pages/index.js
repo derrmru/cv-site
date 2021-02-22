@@ -51,7 +51,7 @@ export default function Home() {
         <div className="huge-title">
           <MatrixHeader 
             language={language} 
-            words={['Web', 'Software', 'React', 'Nomad', 'PWA', 'Javascript', 'Full Stack']}
+            words={['Web', 'React', 'Gatsby', 'PWA', 'Javascript', 'Nomad', 'Front End', 'Full Stack']}
             />
           <DownwardArrow linkTo='#section-2' />
         </div>
