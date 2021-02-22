@@ -1,7 +1,7 @@
 ---
 type: 'side-project'
 slug: /projects/snake-react
-date: '01/01/2021'
+date: '2021-01-01'
 title: 'React Snake'
 projectLink: 'https://thepetersweeney.com/snake'
 period: ['janvier 2021', 'January 2021']

@@ -1,7 +1,7 @@
 ---
 type: 'side-project'
 slug: /projects/mine-the-news
-date: '01/09/2020'
+date: '2020-09-01'
 title: 'Mine The News (Proof Of Concept)'
 projectLink: 'https://minethenews.com/'
 period: ['septembre 2020', 'September 2020']

@@ -1,7 +1,7 @@
 ---
 type: 'experience'
 slug: /projects/lfas-registration-form
-date: "01/05/2020"
+date: "2020-05-01"
 title: 'Registration Form'
 projectLink: "https://registration.londonfootandanklesurgery.co.uk/"
 client: "London Foot & Ankle Surgery"

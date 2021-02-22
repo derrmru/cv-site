@@ -1,7 +1,7 @@
 ---
 type: 'experience'
 slug: /projects/podiatric-diagnostic-tools
-date: "01/07/2020"
+date: "2020=07-01"
 title: 'Diagnostic Tool'
 projectLink: "https://conditions.londonfootandanklesurgery.co.uk/"
 client: "London Foot & Ankle Surgery"

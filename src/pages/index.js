@@ -4,7 +4,9 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import Body from "../templates/Body/Body"
 import SEO from "../components/SEO/SEO"
 import MatrixHeader from "../components/MatrixHeader/MatrixHeader"
+import Decypher from '../components/Decypher/Decypher'
 import DownwardArrow from "../components/Icons/DownwardArrow/DownwardArrow"
+import PointerDown from '../components/Icons/PointerDown/PointerDown'
 import Card from "../components/Card/Card"
 import ContactForm from "../components/ContactForm/ContactForm"
 import './index.css'
@@ -20,15 +22,15 @@ export default function Home() {
   //query 3 most recent portfolio items
   const data = useStaticQuery(graphql`
         query porfolioQuery {
-          allMarkdownRemark(filter: {frontmatter: {type: {eq: "experience"}}}, limit: 3) {
+          allMarkdownRemark(filter: {frontmatter: {type: {eq: "experience"}}}) {
             edges {
               node {
                 frontmatter {
                   title
                   date
+                  type
                   description
                   specialisms
-                  projectLink
                   slug
                   period
                 }
@@ -59,19 +61,19 @@ export default function Home() {
             <div className="section-2-image">
               <div className="yellow-dot"></div>
               <div className="red-dot"></div>
-              <img className="computer-image" src={designImage} alt="creative computing icon" />
+              <img className="computer-image" width="250" height="200" src={designImage} alt="creative computing icon" />
             </div>
             <div className="section-2-writeup">
               <div className="section-2-text">
                 <h3>What I Do</h3>
-                <p>I create innovative digital solutions, interactive productivity applications & interfaces for businesses, brands and individuals.</p>
+                <p>I create innovative digital solutions, interactive productivity applications, websites & interfaces for businesses, brands and individuals.</p>
                 <p>At the intersection of precision technology and creative artistry, I design, develop & build efficient and scalable IT and pixel-perfect brand representation.</p>
                 <h3>Services</h3>
                 <ul>
-                  <li>UI DESIGN - WIREFRAMING & PROTOTYPING</li>
-                  <li>UI / UX / FRONT END DEVELOPMENT</li>
-                  <li>FULL STACK WEB & APPLICATION DEVELOPMENT</li>
-                  <li>BESPOKE PRODUCTIVITY APPLICATIONS, PROCESS AUTOMATION, REPORTING & ANALYTICS</li>
+                  <li><Decypher words={['UI - Wireframing & Prototyping']} /></li>
+                  <li><Decypher words={['UX / Front End Development']} /></li>
+                  <li><Decypher words={['Full Stack Development']} /></li>
+                  <li><Decypher words={['Bespoke Productivity Apps']} /></li>
                 </ul>
                 <div className="find-out-more">
                   <Link to="/about">Find Out More</Link>
@@ -79,6 +81,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <PointerDown />
         </div>
 
         <div id="section-3" className="homepage-section-3">
@@ -87,7 +90,10 @@ export default function Home() {
             <h4>A Brief Selection Of Recent Work</h4>
             <div className="portfolio-card-container">
               {
-                projects.map((project, i) => {
+                projects
+                .sort((a, b) => new Date(b.node.frontmatter.date) - new Date(a.node.frontmatter.date))
+                .filter((project, idx) => idx < 3)
+                .map((project, i) => {
                   const front = project.node.frontmatter;
                   return <Card 
                     key={'port-item' + i} 

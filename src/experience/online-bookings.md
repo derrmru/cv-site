@@ -1,7 +1,7 @@
 ---
 type: 'experience'
 slug: /projects/lfas-book-appointment-online
-date: "01/02/2021"
+date: "2021-02-01"
 title: "Appointment Reservations"
 projectLink: "https://bookonline.londonfootandanklesurgery.co.uk/"
 client: "London Foot & Ankle Surgery"

@@ -1,0 +1,82 @@
+.headlineContainer {
+  width: 200px;
+  height: auto;
+  margin: -70px 0 0 0;
+  text-align: center;
+}
+
+.screen {
+  stroke-dasharray: 428;
+  stroke-dashoffset: 428;
+  animation: dashes 4s linear forwards;
+  animation-delay: 1s;
+  fill: #191924;
+  fill-opacity: 0;
+}
+
+.border {
+stroke-dasharray: 496;
+stroke-dashoffset: 496;
+animation: dash 2s linear forwards;
+}
+
+.outline {
+stroke-dasharray: 270;
+stroke-dashoffset: 270;
+animation: dash 1s linear forwards;
+animation-delay: 2.5s;
+}
+
+.homeButton {
+opacity: 0;
+animation: fade 1s linear forwards;
+animation-delay: 1s;
+}
+
+.camera {
+opacity: 0;
+animation: fade 1s linear forwards;
+animation-delay: 2.5s;
+}
+
+.line {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: line .5s linear forwards;
+  animation-delay: 3s;
+}
+
+@keyframes line {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dashes {
+  50% {
+    stroke-dashoffset: 0;
+    fill-opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    /*fill-opacity: 1;*/
+  }
+}
+
+@keyframes fade {
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .headlineContainer {
+      margin-top: -80px;
+  }
+}

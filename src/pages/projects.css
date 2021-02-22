@@ -103,3 +103,12 @@
         width: 90%;
     }
 }
+
+@media screen and (min-width: 250px) and (max-width: 767px) and (orientation: landscape) {
+    .project-link {
+        width: 90%;
+    }
+    .project-card {
+        width: 90%;
+    }
+}

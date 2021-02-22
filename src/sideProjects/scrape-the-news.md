@@ -1,7 +1,7 @@
 ---
 type: 'side-project'
 slug: /projects/scrape-the-news
-date: '01/09/2020'
+date: '2020-09-01'
 title: 'Scrape The News (Proof Of Concept)'
 projectLink: 'https://words-news-scraper.herokuapp.com/'
 period: ['septembre 2020', 'September 2020']

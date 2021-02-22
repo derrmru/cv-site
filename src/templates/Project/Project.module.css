@@ -62,3 +62,18 @@
         width: 90%;
     }
 }
+
+@media screen and (min-width: 250px) and (max-width: 767px) and (orientation: landscape) {
+    .projectBody {
+        margin: 40px 0;
+    }
+    .projectTitle {
+        width: 70%;
+    }
+    .projectMain {
+        width: 94%;
+    }
+    .projectDetails {
+        width: 90%;
+    }
+}

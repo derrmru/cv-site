@@ -1,7 +1,7 @@
 ---
 type: 'experience'
 slug: /projects/you-wear-it-best
-date: "01/08/2020"
+date: "2020-08-01"
 title: "You Wear It Best (In Progress)"
 projectLink: "https://you-wear-it-best.netlify.app/"
 client: "You Wear It Best"

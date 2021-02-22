@@ -90,7 +90,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 70px;
+    font-size: 30px;
     color: var(--the-black);
     position: relative;
 }
@@ -108,7 +108,7 @@ li {
 
 .section-2 {
     width: 100%;
-    margin: 80px auto;
+    margin: 40px auto 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -145,7 +145,7 @@ li {
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
-    background-color: rgba(252,171,112,.2);
+    background-color: rgba(252, 145, 112, 0.2);
     mix-blend-mode: multiply;
 }
 
@@ -256,13 +256,13 @@ li {
 
 @media only screen and (max-width: 800px) {
     .huge-title {
-        font-size: 60px;
+        font-size: 30px;
     }
 }
 
 @media only screen and (max-width: 567px) {
     .huge-title {
-        font-size: 50px;
+        font-size: 30px;
         height: 100vh;
     }
 
@@ -307,3 +307,56 @@ li {
         width: 90%;
     }
 }
+
+
+@media screen and (min-width: 250px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+    .huge-title {
+        height: 100vw;
+    }
+    .section-2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 94%;
+        margin: auto;
+    }
+    .section-2-image {
+        width: 98%;
+    }
+
+    .section-2-writeup {
+        width: 94%;
+        text-align: left;
+        border-left: none;
+    }
+    .portfolio-card-container {
+        flex-direction: column;
+    }
+    .home-contact-content {
+        width: 100%;
+    }
+
+    .home-contact-writing {
+        width: 90%;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+    }
+
+    .contact-start {
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+    }
+
+    .home-contact {
+        width: 90%;
+    }
+  }

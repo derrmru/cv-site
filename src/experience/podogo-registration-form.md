@@ -1,7 +1,7 @@
 ---
 type: 'experience'
 slug: /projects/podogo-registration-form
-date: "01/01/2021"
+date: "2021-01-01"
 title: "Podogo Registration Form"
 projectLink: "https://registration.podogo.com"
 client: "Podogo Ltd."

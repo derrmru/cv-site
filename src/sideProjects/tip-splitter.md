@@ -1,7 +1,7 @@
 ---
 type: 'side-project'
 slug: /projects/split-tips-amongst-staff
-date: '01/09/2020'
+date: '2020-09-01'
 title: 'Tip Splitter'
 projectLink: 'https://splitmytips.com/'
 period: ['août 2020', 'August 2020']

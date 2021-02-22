@@ -42,7 +42,9 @@ const Project = ({ data }) => {
               {
                 front.projectLink && <a href={front.projectLink} target="_blank" rel="noreferrer">Live Application</a>
               }
-              <p><a href={front.repository} target="_blank" rel="noreferrer">Repository</a></p>
+              {
+                front.repository && <p><a href={front.repository} target="_blank" rel="noreferrer">Repository</a></p>
+              }
               <div className={style.pdContactContainer}>
                 <h4 className={style.pdContact}>Get In Touch</h4>
                 <ContactForm contactName="project-page" />

@@ -13,3 +13,9 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width: 250px) and (max-width: 767px) and (orientation: landscape) {
+    .body-container {
+        height: 100vw;
+    }
+}
