@@ -1,134 +1,150 @@
 .sidebar-container {
-    height: 100vh;
-    width: 20%;
-    background-color: var(--the-black);
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  height: 100vh;
+  width: 20%;
+  background-color: var(--the-black);
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fade-in {
+  animation: fadeIn ease .5s;
+  -webkit-animation: fadeIn ease .5s;
+  -moz-animation: fadeIn ease .5s;
+  -o-animation: fadeIn ease .5s;
+  -ms-animation: fadeIn ease .5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .sidebar-scroll {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: auto;
-    height: auto;
-    overflow-y: scroll;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  height: auto;
+  overflow-y: scroll;
 }
 
-.sidebar-titles h1, h2{
-    color: var(--the-white);
-    font-weight: 100;
+.sidebar-titles h1,
+h2 {
+  color: var(--the-white);
+  font-weight: 100;
 }
 
 .sidebar-titles {
-    text-align: right;
-    margin-top: 20px;
+  text-align: right;
+  margin-top: 20px;
 }
 
 .sidebar-titles h1 {
-    font-size: 2vw;
+  font-size: 2vw;
 }
 
 .sidebar-titles h2 {
-    font-size: 1.6vw
+  font-size: 1.6vw;
 }
 
 .computer-container {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    perspective: 120px;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  perspective: 120px;
 }
 
 .sidebar-items {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    justify-content: flex-start;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: flex-start;
 }
 
 .page-link {
-    text-decoration: none;
-    margin: 20px 0;
-    color: var(--the-white);
-    background-color: #ebebeb00;
-    border: none;
-    outline: none;
+  text-decoration: none;
+  margin: 20px 0;
+  color: var(--the-white);
+  background-color: #ebebeb00;
+  border: none;
+  outline: none;
 }
 
 .linked {
-    color: var(--the-white);
-    text-decoration: none;
-    font-size: 18px;
+  color: var(--the-white);
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .linked:hover {
-    color: var(--main-color);
-
+  color: var(--main-color);
 }
 
 @media only screen and (max-width: 1025px) {
-    .sidebar-container {
-        width: 100%;
-        z-index: 800;
-        height: 100vh;
-    }
+  .sidebar-container {
+    width: 100%;
+    z-index: 800;
+    height: 100vh;
+  }
 
-    .sidebar-titles {
-        text-align: center;
-    }
+  .sidebar-titles {
+    text-align: center;
+  }
 
-    .sidebar-titles h1 {
-        font-size: 50px;
-    }
-    
-    .sidebar-titles h2 {
-        font-size: 30px;
-    }
+  .sidebar-titles h1 {
+    font-size: 50px;
+  }
 
-    .sidebar-items {
-        text-align: center;
-    }
+  .sidebar-titles h2 {
+    font-size: 30px;
+  }
 
-    .linked {
-        font-size: 20px;
-    }
+  .sidebar-items {
+    text-align: center;
+  }
+
+  .linked {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
-    .sidebar-container {
-        display: flex;
-    }
+  .sidebar-container {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 1025px) {
-    .sidebar-titles h1 {
-        font-size: 30px;
-    }
-    
-    .sidebar-titles h2 {
-        font-size: 20px;
-    }
+  .sidebar-titles h1 {
+    font-size: 30px;
+  }
+
+  .sidebar-titles h2 {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .page-link {
-        margin: 10px 0;
-    }
+  .page-link {
+    margin: 10px 0;
+  }
 }
 
 @media screen and (min-width: 250px) and (max-width: 767px) and (orientation: landscape) {
-    .sidebar-container {
-        width: 100%;
-        height: 100vw;
-    }
+  .sidebar-container {
+    width: 100%;
+    height: 100vw;
+  }
 }

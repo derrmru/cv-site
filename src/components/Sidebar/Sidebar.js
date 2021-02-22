@@ -6,7 +6,7 @@ import './Sidebar.css'
 const Sidebar = (props) => {
 
     return (
-        <div className="sidebar-container" style={{ display: props.vValue }}>
+        <div className="sidebar-container fade-in" style={{ display: props.vValue }}>
             <div className="sidebar-titles">
                 <h1>Peter Sweeney</h1>
                 <h2>{props.language === 'French' ? 'Développeur' : 'Developer'}</h2>
