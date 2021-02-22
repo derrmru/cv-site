@@ -5,7 +5,7 @@ import Footer from '../../components/Footer/Footer'
 import './Body.css'
 
 const Body = (props) => {
-    const [toggleMenu, setToggleMenu] = useState('inline')
+    const [toggleMenu, setToggleMenu] = useState('none')
     const setToggle = () => {
         toggleMenu === 'none' ?
             setToggleMenu('flex') :
