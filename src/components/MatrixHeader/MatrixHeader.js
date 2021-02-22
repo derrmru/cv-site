@@ -123,7 +123,7 @@ const MatrixHeader = ({ language, words }) => {
             </div>
             <div className="keep-height">
                 {
-                    count > 4 ? <Decypher words={words} /> : <span style={{color: "rgba(0, 0, 0, 0)"}}>Web</span>
+                    count > 4 ? <Decypher words={words} /> : <span style={{color: "rgba(0, 0, 0, 0)"}}><Decypher words={['Web']} /></span>
                 }
             </div>
             <div>
