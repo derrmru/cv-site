@@ -122,9 +122,11 @@ const MatrixHeader = ({ language, words }) => {
                 </svg>
             </div>
             <div className="keep-height">
+                <div style={{minHeight: '35px'}}>
                 {
                     count > 4 ? <Decypher words={words} /> : <span style={{color: "rgba(0, 0, 0, 0)"}}>Web</span>
                 }
+                </div>
             </div>
             <div>
                 {
