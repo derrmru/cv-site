@@ -211,7 +211,7 @@ li {
 
 .homepage-contact-container {
     background-color: var(--the-white);
-    padding: 40px 0 40px 0;
+    padding: 40px 0;
 }
 
 .home-contact-content {
@@ -309,5 +309,15 @@ li {
 
     .home-contact {
         width: 90%;
+    }
+}
+
+@media  (max-device-width: 1023px) and (orientation: landscape) {
+    .huge-title {
+        height: auto;
+        font-size: 18px;
+    }
+    .homepage-contact-container {
+        padding: 40px 0 280px;
     }
 }

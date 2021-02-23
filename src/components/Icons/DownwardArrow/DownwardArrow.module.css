@@ -57,3 +57,9 @@
         bottom: 15vh;
     }
 }
+
+@media  (max-device-width: 1023px) and (orientation: landscape) {
+    .downwardArrow {
+        animation: none;
+    }
+  }

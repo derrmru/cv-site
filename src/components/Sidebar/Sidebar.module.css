@@ -10,17 +10,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  z-index: 800;
-}
-
-.sidebarScroll {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin: auto;
-  height: auto;
+  z-index: 1200;
   overflow-y: scroll;
 }
 
@@ -117,9 +107,8 @@
   }
 }
 
-@media screen and (min-width: 250px) and (max-width: 767px) and (orientation: landscape) {
+@media  (max-device-width: 1023px) and (orientation: landscape) {
   .sidebarContainer {
-    width: 100%;
-    height: 100vw;
+    overflow-y: scroll;
   }
 }

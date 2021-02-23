@@ -98,3 +98,23 @@ animation-delay: 2.5s;
       margin-top: -80px;
   }
 }
+
+@media  (max-device-width: 1023px) and (orientation: landscape) {
+  .huge-title {
+      height: auto;
+  }
+
+  .headlineContainer {
+    margin: 20px 0;
+  }
+
+  .ipadBox {
+    width: 70%;
+    margin: 0 auto 20px auto;
+  }
+
+  .peterTitle {
+    margin: 0 0 5px;
+    font-size: 24px;
+  }
+}
