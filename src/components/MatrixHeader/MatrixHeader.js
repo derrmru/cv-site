@@ -27,7 +27,7 @@ const MatrixHeader = ({ language, words }) => {
                     flexDirection: 'row', 
                     justifyContent: 'center'}}
                     >
-            <svg width="280" height="auto" viewBox="0 0 230 266.66666">
+            <svg width="280" height="200" viewBox="0 0 230 266.66666">
                 <g transform="matrix(1.3333333,0,0,-1.3333333,0,266.66667)">
                     <g transform="translate(113.0957,15.0996)">
                     <path 
