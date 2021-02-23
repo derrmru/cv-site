@@ -1,5 +1,6 @@
 .cardContain {
     width: 30%;
+    max-width: 350px;
     padding: 30px 0;
     border: var(--the-black);
     border-width: 1px 2px;
@@ -50,13 +51,6 @@
 @media only screen and (max-width: 600px) {
     .cardContain {
         width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (min-width: 250px) and (max-width: 767px) and (orientation: landscape) {
-    .cardContain {
-        width: 100%;
-        margin-bottom: 20px;
+        margin: 0 auto 20px auto;
     }
 }

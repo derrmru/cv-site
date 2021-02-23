@@ -5,6 +5,17 @@
   text-align: center;
 }
 
+.ipadBox {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.peterTitle {
+  font-size: 30px;
+  opacity: 0;
+  animation: fade 1s linear forwards;  
+}
+
 .screen {
   stroke-dasharray: 428;
   stroke-dashoffset: 428;
@@ -76,6 +87,13 @@ animation-delay: 2.5s;
 }
 
 @media only screen and (max-width: 567px) {
+  .ipadBox {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+  .peterTitle {
+    font-size: 24px;
+  }
   .headlineContainer {
       margin-top: -80px;
   }

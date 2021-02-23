@@ -13,7 +13,7 @@ const Body = (props) => {
     }
 
     //Listen for window resizing
-    useLayoutEffect(() => {
+    /*useLayoutEffect(() => {
       function updateSize() {
         window.innerWidth < 1025 ? 
             setToggleMenu('none') :
@@ -22,7 +22,7 @@ const Body = (props) => {
       window.addEventListener('resize', updateSize);
       updateSize();
       return () => window.removeEventListener('resize', updateSize);
-    }, []);
+    }, []);*/
 
 
     //language

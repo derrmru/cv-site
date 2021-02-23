@@ -29,6 +29,7 @@ body {
 hr {
     background-color: var(--the-white);
     width: 64%;
+    max-width: 450px;
     margin: 20px 0;
 }
 
@@ -90,7 +91,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 24px;
     color: var(--the-black);
     position: relative;
 }
@@ -118,6 +119,7 @@ li {
 
 .section-2-image {
     width: 50%;
+    max-width: 600px;
     position: relative;
 }
 
@@ -179,6 +181,7 @@ li {
 
 .homepage-3-container {
     width: 80%;
+    max-width: 1025px;
     margin: auto;
     text-align: left;
 }
@@ -213,6 +216,7 @@ li {
 
 .home-contact-content {
     width: 90%;
+    max-width: 1025px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -262,7 +266,7 @@ li {
 
 @media only screen and (max-width: 567px) {
     .huge-title {
-        font-size: 30px;
+        font-size: 20px;
         height: 100vh;
     }
 
@@ -307,56 +311,3 @@ li {
         width: 90%;
     }
 }
-
-
-@media screen and (min-width: 250px) and (max-width: 767px) and (orientation: landscape) {
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
-    .huge-title {
-        height: 100vw;
-    }
-    .section-2 {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 94%;
-        margin: auto;
-    }
-    .section-2-image {
-        width: 98%;
-    }
-
-    .section-2-writeup {
-        width: 94%;
-        text-align: left;
-        border-left: none;
-    }
-    .portfolio-card-container {
-        flex-direction: column;
-    }
-    .home-contact-content {
-        width: 100%;
-    }
-
-    .home-contact-writing {
-        width: 90%;
-        margin-bottom: 40px;
-        padding-bottom: 20px;
-    }
-
-    .contact-start {
-        padding-bottom: 50px;
-        margin-bottom: 20px;
-    }
-
-    .home-contact {
-        width: 90%;
-    }
-  }

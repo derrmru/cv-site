@@ -1,6 +1,7 @@
 .projectBody {
     width: 100%;
-    margin: 40px 0;
+    max-width: 1025px;
+    margin: 40px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,7 +43,7 @@
     border-top: 1px dotted var(--the-black);
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1125px) {
     .projectBody {
         margin: 100px 0;
     }

@@ -1,5 +1,6 @@
 .contact-container {
-    width: 96%; 
+    width: 96%;
+    max-width: 1025px; 
     height: auto;
     background-color: var(--the-white);
     padding: 20px 0;

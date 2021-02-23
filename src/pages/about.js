@@ -42,7 +42,7 @@ const About = () => {
                         </a>
 
                     </div>
-                    <DownWardArrow linkTo="#trans-section" />
+                    <DownWardArrow delay=".5s" linkTo="#trans-section" />
                 </div>
 
                 <div id="trans-section" className="transparent-section">

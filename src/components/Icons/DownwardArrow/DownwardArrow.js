@@ -8,6 +8,7 @@ const DownwardArrow = (props) => {
     return (
         <button 
             className={style.downwardArrow}
+            style={{animationDelay: props.delay}}
             aria-label="Scroll Downards"
             onKeyDown={(e) => e.code === "Space" && scrollTo(props.linkTo)}
             onClick={() => scrollTo(props.linkTo)}

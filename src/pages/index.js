@@ -53,7 +53,7 @@ export default function Home() {
             language={language} 
             words={['Web', 'React', 'Gatsby', 'PWA', 'Javascript', 'Nomad', 'Front End', 'Full Stack']}
             />
-          <DownwardArrow linkTo='#section-2' />
+          <DownwardArrow delay="6s" linkTo='#section-2' />
         </div>
 
         <div id="section-2" className="section-2-container">
@@ -65,7 +65,7 @@ export default function Home() {
             </div>
             <div className="section-2-writeup">
               <div className="section-2-text">
-                <h3>What I Do</h3>
+                <h2>What I Do</h2>
                 <p>I create innovative digital solutions, interactive productivity applications, websites & interfaces for businesses, brands and individuals.</p>
                 <p>At the intersection of precision technology and creative artistry, I design, develop & build efficient and scalable IT and pixel-perfect brand representation.</p>
                 <h3>Services</h3>

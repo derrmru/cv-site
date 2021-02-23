@@ -1,5 +1,6 @@
 .scheduler-container {
     width: 96%;
+    max-width: 1025px;
     margin: 40px auto;
     display: flex;
     flex-direction: row;

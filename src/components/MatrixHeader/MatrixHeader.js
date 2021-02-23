@@ -21,14 +21,13 @@ const MatrixHeader = ({ language, words }) => {
     return (
         <div className={style.headlineContainer}>
             <div 
+                className={style.ipadBox}
                 style={{
-                    width: '100%', 
-                    margin: '0 0 0 0', 
                     display: 'flex', 
                     flexDirection: 'row', 
                     justifyContent: 'center'}}
                     >
-            <svg width="280" height="280" viewBox="0 0 220 266.66666">
+            <svg width="280" height="auto" viewBox="0 0 230 266.66666">
                 <g transform="matrix(1.3333333,0,0,-1.3333333,0,266.66667)">
                     <g transform="translate(113.0957,15.0996)">
                     <path 
@@ -121,17 +120,31 @@ const MatrixHeader = ({ language, words }) => {
                         />
                 </svg>
             </div>
-            <div className="keep-height">
-                <div style={{minHeight: '35px'}}>
-                {
-                    count > 4 ? <Decypher words={words} /> : <span style={{color: "rgba(0, 0, 0, 0)"}}>Web</span>
-                }
-                </div>
-            </div>
             <div>
                 {
-                    count > 3 ? <TypeOut words={language === 'French' ? 'Développeur' : 'Developer'} /> : <span style={{color: "rgba(0, 0, 0, 0)"}}>|</span>
+                    count > 3 ? <h1 className={style.peterTitle}><TypeOut words={'Peter Sweeney'} /></h1> : <h1 className={style.peterTitle} style={{color: "rgba(0, 0, 0, 0)"}}>Peter Sweeney</h1>
                 }
+                <div style={{minHeight: '35px'}}>
+                {
+                    count > 4 ? <>
+                        <div>
+                            <Decypher words={words} />
+                        </div>
+                        <div>
+                            <Decypher words={language === 'French' ? ['Développeur'] : ['Developer']} />
+                        </div>
+                    </>
+                    :
+                    <>
+                        <div>
+                            <span style={{color: 'rgba(0, 0, 0, 0)'}}>Web</span>
+                        </div>
+                        <div>
+                            <span style={{color: 'rgba(0, 0, 0, 0)'}}>Developer</span>
+                        </div>
+                    </>
+                }
+                </div>
             </div>
         </div >
     )

@@ -4,6 +4,8 @@
 
 .projects-container {
     width: 100%;
+    max-width: 1025px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -96,15 +98,6 @@
 }
 
 @media only screen and (max-width: 567px) {
-    .project-link {
-        width: 90%;
-    }
-    .project-card {
-        width: 90%;
-    }
-}
-
-@media screen and (min-width: 250px) and (max-width: 767px) and (orientation: landscape) {
     .project-link {
         width: 90%;
     }
