@@ -49,6 +49,9 @@ module.exports = {
         head: false,
         anonymize: true,
       },
+      pluginConfig: {
+        head: true
+      }
     },
   ],
 }
