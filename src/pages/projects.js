@@ -36,7 +36,7 @@ const Projects = (props) => {
         <Body>
             <SEO 
                 title="Portfolio" 
-                description="A Portfolio of my previous work."
+                description="A Portfolio of previous web development work and client projects."
                 />
             <h1 className="projects-page-title">Portfolio</h1>
             <div className="projects-container">

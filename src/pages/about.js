@@ -51,7 +51,9 @@ const About = () => {
                             <h2>About Me</h2>
                             <div className="profile-container">
                                 <div className="profile-image">
-                                    <Img fluid={profileImage.file.childImageSharp.fluid} />
+                                    <div>
+                                        <Img fluid={profileImage.file.childImageSharp.fluid} />
+                                    </div>
                                 </div>
                                 <div className="profile-description">
                                     <h3>Headlines</h3>
@@ -66,6 +68,20 @@ const About = () => {
                                     <p>I am employed fulltime on a remote basis, but am open to one-off projects and freelance work.</p>
                                     <h3>Personal</h3>
                                     <p>I grew up in London but in recent years have adopted the 'nomad' lifestyle (I am currently to be found haunting France).</p>
+                                    <h3>Preferred Stack</h3>
+                                    <p><strong>Front End:</strong></p>
+                                    <ul>
+                                        <li>Languages: Javascript, HTML, CSS</li>
+                                        <li>Libraries: React JS, JQuery, D3 JS</li>
+                                        <li>Frameworks: Gatsby JS, Netlify, Wordpress</li>
+                                    </ul>
+                                    <p><strong>Database:</strong> Mongo DB, Mongoose</p>
+                                    <p><strong>Server:</strong> Node JS, Express JS</p>
+                                    <p><strong>Cloud:</strong></p>
+                                    <ul>
+                                        <li>Languages: Google Apps Script</li>
+                                        <li>Services: Google Workspace, Google Cloud Services, ServiceNow</li>
+                                    </ul>
                                     <h3>Contact</h3>
                                     <p>Don't be shy. Get in touch!</p>
                                     <div className="buttons-container">
