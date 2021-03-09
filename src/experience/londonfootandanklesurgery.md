@@ -22,6 +22,6 @@ This site is managed by me on an ongoing basis.
 
 ### Used Technologies and Libraries
 
-- [Wordpress](https://www.gatsbyjs.com/)
+- [Wordpress](https://wordpress.com/)
 - [PHP](https://reactjs.org/)
 - [Google Maps API](https://www.netlifycms.org/)

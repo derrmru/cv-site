@@ -73,7 +73,7 @@ const About = () => {
                                     <ul>
                                         <li>Languages: Javascript, HTML, CSS</li>
                                         <li>Libraries: React JS, JQuery, D3 JS</li>
-                                        <li>Frameworks: Gatsby JS, Netlify, Wordpress</li>
+                                        <li>Frameworks: Gatsby JS, Next JS, Netlify, Vercel, Wordpress</li>
                                     </ul>
                                     <p><strong>Database:</strong> Mongo DB, Mongoose</p>
                                     <p><strong>Server:</strong> Node JS, Express JS</p>

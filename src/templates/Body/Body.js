@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import MenuButton from "../../components/MenuButton/MenuButton"
 import Sidebar from "../../components/Sidebar/Sidebar"
 import Footer from '../../components/Footer/Footer'
@@ -11,19 +11,6 @@ const Body = (props) => {
             setToggleMenu('flex') :
                 setToggleMenu('none')
     }
-
-    //Listen for window resizing
-    /*useLayoutEffect(() => {
-      function updateSize() {
-        window.innerWidth < 1025 ? 
-            setToggleMenu('none') :
-                setToggleMenu('flex')
-      }
-      window.addEventListener('resize', updateSize);
-      updateSize();
-      return () => window.removeEventListener('resize', updateSize);
-    }, []);*/
-
 
     //language
     const [language, setLanguage] = useState('English')

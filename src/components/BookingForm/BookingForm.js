@@ -44,7 +44,7 @@ const BookingForm = (props) => {
                 <label>
                     <div className={styles.bookingLabel}>Medium:</div> <div className={styles.requiredIcon}>*</div>
                     <br />
-                    <select name="medium" value={medium} onChange={(e) => setMedium(e.target.value)}>
+                    <select name="medium" value={medium} onBlur={(e) => setMedium(e.target.value)} onChange={(e) => setMedium(e.target.value)}>
                         <option value="" disabled defaultValue>-Select a medium-</option>
                         <option value="skype">Skype</option>
                         <option value="google">Google Hangouts</option>
