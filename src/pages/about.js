@@ -71,11 +71,13 @@ const About = () => {
                                     <h3>Preferred Stack</h3>
                                     <p><strong>Front End:</strong></p>
                                     <ul>
-                                        <li>Languages: Javascript, HTML, CSS</li>
+                                        <li>Languages: Javascript, HTML, CSS, Ruby, PHP</li>
                                         <li>Libraries: React JS, JQuery, D3 JS</li>
-                                        <li>Frameworks: Gatsby JS, Next JS, Netlify, Vercel, Wordpress</li>
+                                        <li>Frameworks: Gatsby JS, Next JS, Rails</li>
+                                        <li>CMS: Netlify, Contentful, Wordpress</li>
+                                        <li>Queries: GraphQL, REST</li>
                                     </ul>
-                                    <p><strong>Database:</strong> Mongo DB, Mongoose</p>
+                                    <p><strong>Database:</strong> Mongo DB, Mongoose, sqlite</p>
                                     <p><strong>Server:</strong> Node JS, Express JS</p>
                                     <p><strong>Cloud:</strong></p>
                                     <ul>

@@ -14,10 +14,10 @@ const Project = ({ data }) => {
             title={front.title}
             description={'Selected Portfolio Item: ' + front.description}
             />
+          <h1 className={style.projectTitle}>{front.title}</h1>
+          <div className={style.projectSpan}><i> - {front.period[1]}</i></div>
           <div className={style.projectBody}>
             <div className={style.projectMain}>
-              <h1 className={style.projectTitle}>{front.title}</h1>
-              <span><i> - {front.period[1]}</i></span>
               <h3>Short Description:</h3>
               <p>{front.description}</p>
               <div className={style.projectText}
