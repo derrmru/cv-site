@@ -58,9 +58,9 @@ const About = () => {
                                 <div className="profile-description">
                                     <h3>Headlines</h3>
                                     <ul>
-                                        <li>Europe-based remote worker.</li>
-                                        <li>Full stack web development.</li>
-                                        <li>Clean, responsive & mobile-first web design.</li>
+                                        <li>Europe-based full stack developer - (GMT+1).</li>
+                                        <li>Freelance technology solutions.</li>
+                                        <li>Clean & responsive code.</li>
                                         <li>Well documented projects.</li>
                                     </ul>
                                     <p>I have a passion for building and developing modern, detailed, innovative and experimental web applications or software.</p>
@@ -68,10 +68,10 @@ const About = () => {
                                     <p>I am employed fulltime on a remote basis, but am open to one-off projects and freelance work.</p>
                                     <h3>Personal</h3>
                                     <p>I grew up in London but in recent years have adopted the 'nomad' lifestyle (I am currently to be found haunting France).</p>
-                                    <h3>Preferred Stack</h3>
+                                    <h3>Stack</h3>
                                     <p><strong>Front End:</strong></p>
                                     <ul>
-                                        <li>Languages: Javascript, HTML, CSS, Ruby, PHP</li>
+                                        <li>Languages: Javascript, Typescript, HTML, CSS, Ruby, PHP</li>
                                         <li>Libraries: React JS, JQuery, D3 JS</li>
                                         <li>Frameworks: Gatsby JS, Next JS, Rails</li>
                                         <li>CMS: Netlify, Contentful, Wordpress</li>
