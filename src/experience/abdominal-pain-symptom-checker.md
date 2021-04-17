@@ -2,14 +2,14 @@
 type: 'experience'
 slug: /projects/abdominal-pain-symptom-checker
 date: "2021-04-07"
-title: 'Clinial Triage Application'
+title: 'Clinical Triage Application'
 projectLink: "https://harleystreet-medicalcentre.com/abdomen-pain-clinic/"
 client: "Harley Street Medical Centre"
 clientLink: "https://harleystreet-medicalcentre.com/"
 period: ["avril 2021", "April 2021"]
 specialisms: ['reactjs', 'typescript', 'wordpress', 'PHP']
 repository: "https://github.com/derrmru/abdomen-pain-symptom-checker"
-description: "An interactive symptom checker built as wordpress plugin."
+description: "An interactive symptom checker and appointment request form built as wordpress plugin."
 ---
 
 ### Description
