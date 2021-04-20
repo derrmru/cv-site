@@ -2,13 +2,13 @@ import React from 'react'
 import ContactForm from '../components/ContactForm/ContactForm'
 import ContactBox from '../components/ContactBox/ContactBox'
 import Body from "../templates/Body/Body"
-import SEO from '../components/SEO/SEO'
+import Seo from '../components/Seo/Seo'
 import './contact.css'
 
 const Contact = () => {
     return (
         <Body>
-            <SEO 
+            <Seo 
                 title="Get In Touch" 
                 description="Get in touch to discuss your project. Email, schedule a call or find me online."
                 />

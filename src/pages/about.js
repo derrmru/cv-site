@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Body from "../templates/Body/Body"
-import SEO from '../components/SEO/SEO'
+import Seo from '../components/Seo/Seo'
 import DownWardArrow from "../components/Icons/DownwardArrow/DownwardArrow"
 import Decypher from '../components/Decypher/Decypher'
 import './about.css'
@@ -23,7 +23,7 @@ const About = () => {
 
     return (
         <Body>
-            <SEO 
+            <Seo 
                 title="About" 
                 description="Headlines: Europe-based remote worker. Full stack web development. Clean, responsive & mobile-first web design. Well documented projects."
                 />

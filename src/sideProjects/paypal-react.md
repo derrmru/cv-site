@@ -10,7 +10,7 @@ repository: 'https://github.com/derrmru/paypal-smart-button-react'
 description: 'Reusable React Component to render Paypal button, available via NPM.'
 ---
 
-# Paypal Smart Button
+## Paypal Smart Button
 
 Sometimes you just want a react component to be simple and work straight away. No Config and only a handful of required props.
 

@@ -1,5 +1,12 @@
 import React, {useEffect, useState, useRef} from "react"
-import styles from "./Computer.module.css"
+import {
+    outline,
+    screen,
+    stand,
+    keyboard,
+    keys,
+    keysTwo
+} from "./Computer.module.css"
 
 export default function Computer(){
     const [count, setCount] = useState(0);
@@ -21,12 +28,12 @@ export default function Computer(){
 
     return (
         <>
-            <div className={styles.outline}></div>
-            <div className={styles.screen}>./{toBeTyped.current.substr(1, count)}</div>
-            <div className={styles.stand}></div>
-            <div className={styles.keyboard}>
-                <div className={styles.keys}></div>
-                <div className={styles.keysTwo}></div>
+            <div className={outline}></div>
+            <div className={screen}>./{toBeTyped.current.substr(1, count)}</div>
+            <div className={stand}></div>
+            <div className={keyboard}>
+                <div className={keys}></div>
+                <div className={keysTwo}></div>
             </div>
         </>
     )

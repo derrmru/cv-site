@@ -1,7 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import Decypher from '../Decypher/Decypher'
 import TypeOut from '../TypeOut/TypeOut'
-import style from './MatrixHeader.module.css'
+import {
+    headlineContainer,
+    ipadBox,
+    peterTitle,
+    screen,
+    border,
+    outline,
+    homeButton,
+    camera,
+    line
+} from './MatrixHeader.module.css'
 
 const MatrixHeader = ({ language, words }) => {
     const [begin, setBegin] = useState(true);
@@ -19,9 +29,9 @@ const MatrixHeader = ({ language, words }) => {
     }, [setBegin, begin, count])
 
     return (
-        <div className={style.headlineContainer}>
+        <div className={headlineContainer}>
             <div 
-                className={style.ipadBox}
+                className={ipadBox}
                 style={{
                     display: 'flex', 
                     flexDirection: 'row', 
@@ -31,7 +41,7 @@ const MatrixHeader = ({ language, words }) => {
                 <g transform="matrix(1.3333333,0,0,-1.3333333,0,266.66667)">
                     <g transform="translate(113.0957,15.0996)">
                     <path 
-                        className={style.screen} 
+                        className={screen} 
                         d="M 0,0 -71.865,51.416 -46.202,169.164 32,124 Z" 
                         style={{
                             stroke:'#191924',
@@ -46,7 +56,7 @@ const MatrixHeader = ({ language, words }) => {
                     <g clip-path="url(#clipPath22)">
                         <g transform="translate(106.8682,4.1875)">
                         <path 
-                            className={style.border} 
+                            className={border} 
                             d="m 0,0 -68.212,50.194 c -2.472,1.819 -3.65,4.915 -3.013,7.916 l 27.954,131.637 c 0.598,2.677 3.588,4.042 6.002,2.738 l 79.901,-45.173 c 4.081,-2.556 4,-6 2,-13 L 10.522,3.5 C 9.163,-0.986 3.775,-2.778 0,0 Z" 
                             style={{
                                 fill:'none',
@@ -60,7 +70,7 @@ const MatrixHeader = ({ language, words }) => {
                         </g>
                         <g transform="translate(107.6992,167.4624)">
                         <path 
-                            className={style.camera} 
+                            className={camera} 
                             d="M 0,0 C -0.354,-0.775 -1.192,-1.152 -1.872,-0.841 -2.552,-0.531 -2.815,0.35 -2.46,1.125 -2.105,1.9 -1.268,2.277 -0.588,1.967 0.091,1.656 0.354,0.775 0,0" 
                             style={{
                                 fill:'#191924',
@@ -72,7 +82,7 @@ const MatrixHeader = ({ language, words }) => {
                         </g>
                         <g transform="translate(75.606,35.1406)">
                         <path 
-                            className={style.homeButton} 
+                            className={homeButton} 
                             d="m 0,0 c -0.54,-1.493 -2.229,-2.252 -3.775,-1.693 -1.546,0.557 -2.361,2.22 -1.822,3.714 0.539,1.495 2.23,2.252 3.775,1.695 C -0.276,3.157 0.54,1.494 0,0 Z" 
                             style={{
                                 fill:'none',
@@ -86,7 +96,7 @@ const MatrixHeader = ({ language, words }) => {
                         </g>
                         <g transform="translate(64.1167,195.2085)">
                         <path  
-                            className={style.outline} 
+                            className={outline} 
                             d="m 0,0 c 0,0 1.427,4.816 8.975,1.797 l 77.408,-44.505 c 0,0 6,-3 3,-13 L 55.017,-189.167 c 0,0 -3.453,-6.881 -10.784,-2.686" 
                             style={{
                                 fill:'none',
@@ -113,7 +123,7 @@ const MatrixHeader = ({ language, words }) => {
                     stroke-width="1"
                     >
                     <path 
-                        className={style.line} 
+                        className={line} 
                         d="M 0 0 L 200 0" 
                         fill='transparent' 
                         stroke='black'
@@ -122,7 +132,7 @@ const MatrixHeader = ({ language, words }) => {
             </div>
             <div>
                 {
-                    count > 3 ? <h1 className={style.peterTitle}><TypeOut words={'Peter Sweeney'} /></h1> : <h1 className={style.peterTitle} style={{color: "rgba(0, 0, 0, 0)"}}>Peter Sweeney</h1>
+                    count > 3 ? <h1 className={peterTitle}><TypeOut words={'Peter Sweeney'} /></h1> : <h1 className={peterTitle} style={{color: "rgba(0, 0, 0, 0)"}}>Peter Sweeney</h1>
                 }
                 <div style={{minHeight: '35px'}}>
                 {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import designImage from '../images/Laptop.svg'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Body from "../templates/Body/Body"
-import SEO from "../components/SEO/SEO"
+import Seo from "../components/Seo/Seo"
 import MatrixHeader from "../components/MatrixHeader/MatrixHeader"
 import Decypher from '../components/Decypher/Decypher'
 import DownwardArrow from "../components/Icons/DownwardArrow/DownwardArrow"
@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div className="homepage">
       <Body language={language}>
-        <SEO 
+        <Seo 
           title={language === 'French' ? "Accueil" : "Home"} 
           />
 

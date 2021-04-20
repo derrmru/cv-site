@@ -1,6 +1,6 @@
 import React from 'react'
 import Body from "../templates/Body/Body"
-import SEO from '../components/SEO/SEO'
+import Seo from '../components/Seo/Seo'
 import Snake from '../components/Snake/Snake'
 import './snake.css'
 
@@ -8,7 +8,7 @@ const SnakePage = () => {
     return (
         <div className='gatsby-snake-container'>
             <Body>
-                <SEO 
+                <Seo 
                     title="Snake - reusable React component" 
                     description="Classic mobile game, Snake, built as reusable React Component."
                     />

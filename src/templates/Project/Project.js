@@ -1,31 +1,38 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Body from '../Body/Body'
-import SEO from '../../components/SEO/SEO'
+import Seo from '../../components/Seo/Seo'
 import ContactForm from '../../components/ContactForm/ContactForm'
-import style from './Project.module.css'
+import {
+  projectBody,
+  projectMain,
+  projectTitle,
+  projectDetails,
+  pdHeader,
+  pdContactContainer,
+  pdContact,
+  projectSpan
+} from './Project.module.css'
 
 const Project = ({ data }) => {
   const front = data.markdownRemark.frontmatter;
     console.log(front)
     return (
         <Body>
-          <SEO 
+          <Seo 
             title={front.title}
             description={'Selected Portfolio Item: ' + front.description}
             />
-          <h1 className={style.projectTitle}>{front.title}</h1>
-          <div className={style.projectSpan}><i> - {front.period[1]}</i></div>
-          <div className={style.projectBody}>
-            <div className={style.projectMain}>
+          <h1 className={projectTitle}>{front.title}</h1>
+          <div className={projectSpan}><i> - {front.period[1]}</i></div>
+          <div className={projectBody}>
+            <div className={projectMain}>
               <h3>Short Description:</h3>
               <p>{front.description}</p>
-              <div className={style.projectText}
-                    dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-                    />
+              <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
             </div>
-            <div className={style.projectDetails}>
-              <h3 className={style.pdHeader}>Project Details</h3>
+            <div className={projectDetails}>
+              <h3 className={pdHeader}>Project Details</h3>
               {
                 front.client && <p><strong>Client:</strong> <a href={front.clientLink} target="_blank" rel="noreferrer">{front.client}</a></p>
               }
@@ -45,8 +52,8 @@ const Project = ({ data }) => {
               {
                 front.repository && <p><a href={front.repository} target="_blank" rel="noreferrer">Repository</a></p>
               }
-              <div className={style.pdContactContainer}>
-                <h4 className={style.pdContact}>Get In Touch</h4>
+              <div className={pdContactContainer}>
+                <h4 className={pdContact}>Get In Touch</h4>
                 <ContactForm contactName="project-page" />
               </div>
             </div>

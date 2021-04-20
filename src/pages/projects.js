@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import SEO from '../components/SEO/SEO'
+import Seo from '../components/Seo/Seo'
 import Body from '../templates/Body/Body'
 import './projects.css'
 
@@ -34,7 +34,7 @@ const Projects = (props) => {
     
     return (
         <Body>
-            <SEO 
+            <Seo 
                 title="Portfolio" 
                 description="A Portfolio of previous web development work and client projects."
                 />

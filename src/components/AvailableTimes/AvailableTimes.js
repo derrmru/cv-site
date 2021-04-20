@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './AvailableTimes.module.css'
+import { availableTimesContainer, atBanner, hr, timesContainer, atButtons } from './AvailableTimes.module.css'
 
 const AvailableTimes = (props) => {
     let times;
@@ -10,8 +10,8 @@ const AvailableTimes = (props) => {
             {
                 props.loadingTimes ? 
                     <>Loading...</> :
-                    <div id="atBox" className={styles.availableTimesContainer}>
-                        <div className={styles.atBanner}>
+                    <div id="atBox" className={availableTimesContainer}>
+                        <div className={atBanner}>
                             <h2>Available Times</h2>
                             { 
                                 times !== undefined ? 
@@ -19,14 +19,14 @@ const AvailableTimes = (props) => {
                                         <p>Please select a date</p>
                             }
                         </div>
-                        <hr className={styles.hr} />
-                        <div className={styles.timesContainer}>
+                        <hr className={hr} />
+                        <div className={timesContainer}>
                             {
                                 times !== undefined && times.map((time, i) => {
                                     return (
                                         <button
                                             onClick={() => props.selectTime(time)}
-                                            className={styles.atButtons}
+                                            className={atButtons}
                                             key={'time' + i}
                                             >
                                                 {time.split(', ')[1].split(':').map((section, i) => {
