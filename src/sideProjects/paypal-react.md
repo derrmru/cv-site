@@ -29,7 +29,7 @@ npm i react-paypal-smart-button
 3. Implement in your app, as per the following example:
 
 ```javascript
-import PayPalButton from 'paypal-smart-button-react'
+import PayPalButton from 'react-paypal-smart-button'
 
 function App() {
   return (
