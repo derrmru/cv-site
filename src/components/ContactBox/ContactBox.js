@@ -12,6 +12,8 @@ const ContactBox = () => {
                 <h4>Social</h4>
                 <div className="social-buttons">
                     <a href="https://github.com/derrmru" target="_blank" rel="noreferrer"><button>Github</button></a>
+                    <a href="https://www.npmjs.com/~derrmru" target="_blank" rel="noreferrer"><button>NPM</button></a>
+                    <a href="https://stackoverflow.com/users/7061200/derrmru" target="_blank" rel="noreferrer"><button>Stack Overflow</button></a>
                 </div>
             </div>
         </div>
