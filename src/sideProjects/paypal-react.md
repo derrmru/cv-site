@@ -4,7 +4,7 @@ slug: /projects/paypal-react
 date: '2021-04-20'
 title: 'React PayPal Smart Button'
 projectLink: 'https://thepetersweeney.com'
-period: ['avril 2020', 'April 2020']
+period: ['avril 2021', 'April 2021']
 specialisms: ['reactjs', 'NPM', 'PayPal SDK']
 repository: 'https://github.com/derrmru/paypal-smart-button-react'
 description: 'Reusable React Component to render Paypal button, available via NPM.'
