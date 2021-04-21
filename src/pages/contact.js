@@ -13,7 +13,7 @@ const Contact = () => {
                 description="Get in touch to discuss your project. Email, schedule a call or find me online."
                 />
 
-            <h1>Get In Touch</h1>
+            <h1 style={{margin: '40px 0 0 0'}}>Get In Touch</h1>
             <div className="contact-container">
                 <div className="email-form">
                     <ContactBox />
