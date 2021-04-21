@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { StaticImage } from "gatsby-plugin-image"
 import Body from "../templates/Body/Body"
 import Seo from '../components/Seo/Seo'
 import DownWardArrow from "../components/Icons/DownwardArrow/DownwardArrow"
@@ -9,17 +8,6 @@ import Decypher from '../components/Decypher/Decypher'
 import './about.css'
 
 const About = () => {
-    const profileImage = useStaticQuery(graphql`
-    query {
-        file(relativePath: {eq: "profile.png"}) {
-            childImageSharp {
-              fluid(maxWidth: 1080) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
-        }
-    }
-  `)
 
     return (
         <Body>
@@ -52,7 +40,11 @@ const About = () => {
                             <div className="profile-container">
                                 <div className="profile-image">
                                     <div>
-                                        <Img fluid={profileImage.file.childImageSharp.fluid} />
+                                        <StaticImage 
+                                            src="../images/profile.png" 
+                                            alt="Peter Sweeney, developer - profile image" 
+                                            placeholder="tracedSVG"
+                                        />
                                     </div>
                                 </div>
                                 <div className="profile-description">

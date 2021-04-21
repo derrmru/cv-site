@@ -21,13 +21,14 @@
     text-align: left;
     border-left: 1px dotted var(--the-black);
     border-bottom: 1px dotted var(--the-black);
-    padding: 0 0 40px 20px;
+    padding: 20px 20px 40px;
     box-sizing: border-box;
 }
 
 .email-form {
     border-top: 1px dotted var(--the-black);
     box-sizing: border-box;
+    padding: 20px 20px 40px;
     width: 50%;
 }
 
