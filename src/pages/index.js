@@ -54,38 +54,24 @@ export default function Home() {
             'jobTitle': 'Full Stack Developer',
             'name': 'Peter Sweeney',
             'additionalName': 'Joshua',
-            "relevantOccupation": {
-              "@type": "Occupation",
-              "name": "Full Stack Developer",
-              "occupationalCategory": {
-                       "@type": "CategoryCode",
-                       "inCodeSet": {
-                            "@type": "CategoryCodeSet",
-                            "name": "O*Net-SOC",
-                            "dateModified": "2021",
-                            "url": "https://www.onetonline.org/"
-                         },
-                       "codeValue": "15-1254.00",
-                       "name": "Web Developers, Applications",
-                       "url": "https://www.onetonline.org/link/summary/15-1254.00"
-                   },
-                "occupationLocation": [
-                  {
-                    "@type": "AdministrativeArea",
-                    "name": "France"
-                  },
-                  {
-                    "@type": "AdministrativeArea",
-                    "name": "United Kingdom"
-                  }
-                ],
-                "estimatedSalary": {
-                  "@type": "Number",
-                  "currency": 'GBP',
-                  "value": "83000"
-
+            "hasOccupation": [
+              {
+                "@type": "Occupation",
+                "name": "Full Stack Developer",
+                "occupationalCategory": {
+                  "@type": "CategoryCode",
+                  "inCodeSet": {
+                       "@type": "CategoryCodeSet",
+                       "name": "O*Net-SOC",
+                       "dateModified": "2021",
+                       "url": "https://www.onetonline.org/"
+                    },
+                  "codeValue": "15-1254.00",
+                  "name": "Web Developers, Applications",
+                  "url": "https://www.onetonline.org/link/summary/15-1254.00"
                 }
-            },
+              }
+            ],
             'url': 'https://thepetersweeney.com'
           }}
           />
