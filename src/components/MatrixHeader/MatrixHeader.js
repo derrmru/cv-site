@@ -132,7 +132,7 @@ const MatrixHeader = ({ language, words }) => {
             </div>
             <div>
                 {
-                    count > 3 ? <h1 className={peterTitle}><TypeOut words={'Peter Sweeney'} /></h1> : <h1 className={peterTitle} style={{color: "rgba(0, 0, 0, 0)"}}>Peter Sweeney</h1>
+                    count > 3 ? <h1 className={peterTitle} style={{marginTop: '20px'}}><TypeOut words={'Peter Sweeney'} /></h1> : <h1 className={peterTitle} style={{color: "rgba(0, 0, 0, 0)", marginTop: '20px'}}>Peter Sweeney</h1>
                 }
                 <div style={{minHeight: '35px'}}>
                 {
