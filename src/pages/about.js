@@ -13,7 +13,32 @@ const About = () => {
         <Body>
             <Seo
                 title="About"
-                description="Headlines: Europe-based remote worker. Full stack web development. Clean, responsive & mobile-first web design. Well documented projects."
+                description="Headlines: Full stack web development. Europe-based remote worker. Clean, responsive & mobile-first web design. Well documented projects."
+                schema={{
+                    '@type': 'Person', 
+                    'email': 'peter@thepetersweeney.com',
+                    'image': 'https://thepetersweeney.com/static/e012596220d803e42cc1e97e5f660fc0/ae1c8/profile.png',
+                    'jobTitle': 'Full Stack Developer',
+                    'name': 'Peter Sweeney',
+                    'additionalName': 'Joshua',
+                    "relevantOccupation": {
+                      "@type": "Occupation",
+                      "name": "Full Stack Developer",
+                      "occupationalCategory": {
+                               "@type": "CategoryCode",
+                               "inCodeSet": {
+                                    "@type": "CategoryCodeSet",
+                                    "name": "O*Net-SOC",
+                                    "dateModified": "2021",
+                                    "url": "https://www.onetonline.org/"
+                                 },
+                               "codeValue": "15-1254.00",
+                               "name": "Web Developers, Applications",
+                               "url": "https://www.onetonline.org/link/summary/15-1254.00"
+                           }
+                    },
+                    'url': 'https://thepetersweeney.com/about'
+                  }}
             />
 
             <div className="about-background">
