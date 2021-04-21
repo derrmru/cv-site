@@ -118,6 +118,8 @@
     align-self: flex-start;
     margin: 20px 0;
     overflow: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
 }
 
 .profile-description {
