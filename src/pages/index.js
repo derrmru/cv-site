@@ -68,7 +68,23 @@ export default function Home() {
                        "codeValue": "15-1254.00",
                        "name": "Web Developers, Applications",
                        "url": "https://www.onetonline.org/link/summary/15-1254.00"
-                   }
+                   },
+                "occupationLocation": [
+                  {
+                    "@type": "AdministrativeArea",
+                    "name": "France"
+                  },
+                  {
+                    "@type": "AdministrativeArea",
+                    "name": "United Kingdom"
+                  }
+                ],
+                "estimatedSalary": {
+                  "@type": "Number",
+                  "currency": 'GBP',
+                  "value": "83000"
+
+                }
             },
             'url': 'https://thepetersweeney.com'
           }}

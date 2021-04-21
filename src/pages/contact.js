@@ -10,7 +10,7 @@ const Contact = () => {
         <Body>
             <Seo 
                 title="Get In Touch" 
-                description="Get in touch to discuss your project. Email, schedule a call or find me online."
+                description="Get in touch to discuss your website, application or development project. Email, schedule A Call or Follow Me."
                 />
 
             <h1 style={{margin: '40px 0 0 0'}}>Get In Touch</h1>
