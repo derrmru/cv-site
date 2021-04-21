@@ -41,7 +41,7 @@ const Projects = (props) => {
             <h1 className="projects-page-title">Portfolio</h1>
             <div className="projects-container">
                 <div className="year-select-container">
-                    &#62; Filter By Year :
+                    <div style={{height: 'fit-content'}}>&#62; Filter By Year :</div>
                     {
                         years.map((year, i) => {
                             return <button 

@@ -15,7 +15,7 @@ const Sidebar = (props) => {
     return (
         <div className={sidebarContainer} style={{ display: props.vValue }}>
             <div className={sidebarTitles}>
-                <h1>Peter Sweeney</h1>
+                <h1 style={{marginTop: '20px'}}>Peter Sweeney</h1>
                 <h2 style={{color: 'var(--the-white)'}}>{props.language === 'French' ? 'Développeur' : 'Developer'}</h2>
             </div>
             <hr />
