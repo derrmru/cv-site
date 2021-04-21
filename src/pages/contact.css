@@ -2,7 +2,6 @@
     width: 96%;
     max-width: 1025px; 
     height: auto;
-    background-color: var(--the-white);
     padding: 20px 0;
     margin: auto;
     display: flex;
@@ -20,9 +19,15 @@
 .contact-form-page {
     width: 50%;
     text-align: left;
+    border-left: 1px dotted var(--the-black);
+    border-bottom: 1px dotted var(--the-black);
+    padding: 0 0 40px 20px;
+    box-sizing: border-box;
 }
 
 .email-form {
+    border-top: 1px dotted var(--the-black);
+    box-sizing: border-box;
     width: 50%;
 }
 
@@ -35,11 +40,16 @@
         width: 90%;
         margin: auto;
         text-align: left;
+        border: none;
+        padding: 40px 0 0 0;
     }
     
     .email-form {
         width: 100%;
         margin: auto;
+        padding: 0;
+        border-top: none;
+        border-bottom: 1px dotted var(--the-black);
     }
 
 }
