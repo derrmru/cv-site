@@ -2,7 +2,7 @@
 type: 'experience'
 slug: /projects/podogo-online-appointments
 date: "2021-02-28"
-title: "Reserve an Appointment"
+title: "Reserve An Appointment"
 projectLink: "https://bookonline.podogo.com"
 client: "Podogo Ltd"
 clientLink: "https://www.podogo.com"
