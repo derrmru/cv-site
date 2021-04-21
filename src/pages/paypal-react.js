@@ -28,7 +28,7 @@ const PayPalReact = () => {
                     <p>This is a PayPal smart button that just works.</p>
 
                     <h2>Setup</h2>
-                    <p>1. The Hard Bit - if you have not already done so, follow <a href="https://developer.paypal.com/docs/checkout/integrate/?_ga=2.152185595.332577341.1618841693-1038715808.1617958209" target="_blank">PayPal's instructions</a> to get your Client ID</p>
+                    <p>1. The Hard Bit - if you have not already done so, follow <a href="https://developer.paypal.com/docs/checkout/integrate/?_ga=2.152185595.332577341.1618841693-1038715808.1617958209" target="_blank" rel="noreferrer">PayPal's instructions</a> to get your Client ID</p>
                     <p>2. In your CLI and once navigated to your React JS project, install with the following command:</p>
 
                     <pre>
