@@ -11,10 +11,10 @@ const About = () => {
 
     return (
         <Body>
-            <Seo 
-                title="About" 
+            <Seo
+                title="About"
                 description="Headlines: Europe-based remote worker. Full stack web development. Clean, responsive & mobile-first web design. Well documented projects."
-                />
+            />
 
             <div className="about-background">
                 <div className="about-text-1">
@@ -24,8 +24,8 @@ const About = () => {
                         <a href={require('../downloads/cv.pdf')} download>
                             <button
                                 className="about-buttons"
-                                >
-                                    Download CV
+                            >
+                                Download CV
                             </button>
                         </a>
 
@@ -39,13 +39,11 @@ const About = () => {
                             <h2>About Me</h2>
                             <div className="profile-container">
                                 <div className="profile-image">
-                                    <div>
-                                        <StaticImage 
-                                            src="../images/profile.png" 
-                                            alt="Peter Sweeney, developer - profile image" 
-                                            placeholder="tracedSVG"
-                                        />
-                                    </div>
+                                    <StaticImage
+                                        src="../images/profile.png"
+                                        alt="Peter Sweeney, developer - profile image"
+                                        placeholder="tracedSVG"
+                                    />
                                 </div>
                                 <div className="profile-description">
                                     <h3>Headlines</h3>

@@ -118,8 +118,10 @@
     align-self: flex-start;
     margin: 20px 0;
     overflow: hidden;
-    touch-action: none;
-    -ms-touch-action: none;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0)
 }
 
 .profile-description {
