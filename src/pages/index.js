@@ -71,7 +71,7 @@ export default function Home() {
                   "url": "https://www.onetonline.org/link/summary/15-1254.00"
                 },
                 "occupationLocation": {
-                  "@type": "AdministrativeArea",
+                  "@type": "Country",
                   "name": "France"
                 }
               }
