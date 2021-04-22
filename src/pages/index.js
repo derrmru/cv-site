@@ -75,10 +75,8 @@ export default function Home() {
                   "name": "France"
                 },
                 "estimatedSalary": {
-                  "@type": "MonetaryAmount",
-                  "currency": "GBP",
-                  "minValue": 50000,
-                  "maxValue": 100000
+                  "@type": "Number",
+                  "value": 80000,
                 }
               }
             ],
