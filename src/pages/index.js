@@ -76,7 +76,8 @@ export default function Home() {
                 },
                 "estimatedSalary": {
                   "@type": "MonetaryAmountDistribution",
-                  "duration": "1Y",
+                  "name": "base",
+                  "duration": "P1Y",
                   "currency": "GBP",
                   "percentile10": 50000,
                   "percentile25": 70000,
