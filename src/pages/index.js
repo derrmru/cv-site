@@ -73,6 +73,12 @@ export default function Home() {
                 "occupationLocation": {
                   "@type": "Country",
                   "name": "France"
+                },
+                "estimatedSalary": {
+                  "@type": "MonetaryAmount",
+                  "currency": "GBP",
+                  "minValue": 50000,
+                  "maxValue": 100000
                 }
               }
             ],
