@@ -75,8 +75,14 @@ export default function Home() {
                   "name": "France"
                 },
                 "estimatedSalary": {
-                  "@type": "Number",
-                  "value": 80000,
+                  "@type": "MonetaryAmountDistribution",
+                  "duration": "1Y",
+                  "currency": "GBP",
+                  "percentile10": 50000,
+                  "percentile25": 70000,
+                  "median": 80000,
+                  "percentile75": 90000,
+                  "percentile90": 100000
                 }
               }
             ],
