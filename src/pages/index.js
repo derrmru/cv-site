@@ -68,11 +68,11 @@ export default function Home() {
                     },
                   "codeValue": "15-1254.00",
                   "name": "Web Developers, Applications",
-                  "url": "https://www.onetonline.org/link/summary/15-1254.00",
-                  "occupationLocation": {
-                    "@type": "AdministrativeArea",
-                    "name": "France"
-                  }
+                  "url": "https://www.onetonline.org/link/summary/15-1254.00"
+                },
+                "occupationLocation": {
+                  "@type": "AdministrativeArea",
+                  "name": "France"
                 }
               }
             ],
