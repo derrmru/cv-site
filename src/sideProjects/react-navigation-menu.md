@@ -1,6 +1,6 @@
 ---
 type: 'side-project'
-slug: /projects/react-navigation-menu'
+slug: /projects/react-navigation-menu
 date: '2021-04-27'
 title: 'React Navigation Menu'
 projectLink: 'https://thepetersweeney.com'
