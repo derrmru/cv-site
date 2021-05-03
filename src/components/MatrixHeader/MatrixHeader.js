@@ -137,10 +137,10 @@ const MatrixHeader = ({ language, words }) => {
                 <div style={{minHeight: '35px'}}>
                 {
                     count > 4 ? <>
-                        <div>
+                        <div className="fade-in">
                             <Decypher words={words} />
                         </div>
-                        <div>
+                        <div className="fade-in">
                             <Decypher words={language === 'French' ? ['Développeur'] : ['Developer']} />
                         </div>
                     </>

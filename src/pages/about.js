@@ -97,7 +97,7 @@ const About = () => {
                                     <p><strong>Cloud:</strong></p>
                                     <ul>
                                         <li>Languages: Google Apps Script</li>
-                                        <li>Services: Google Workspace, Google Cloud Services, ServiceNow</li>
+                                        <li>Services: Google Workspace, Google Cloud Services, ServiceNow, Meddbase</li>
                                     </ul>
                                     <h3>Contact</h3>
                                     <p>Don't be shy. Get in touch!</p>
