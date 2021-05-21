@@ -17,8 +17,8 @@
 }
 
 .screen {
-  stroke-dasharray: 428;
-  stroke-dashoffset: 428;
+  stroke-dasharray: 428px;
+  stroke-dashoffset: 428px;
   animation: dashes 4s linear forwards;
   animation-delay: 2s;
   fill: #191924;
