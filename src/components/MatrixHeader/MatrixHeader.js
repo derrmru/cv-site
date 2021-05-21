@@ -134,7 +134,7 @@ const MatrixHeader = ({ language, words }) => {
                         <Decypher words={words} />
                     </div>
                     <div className={count > 4 && 'fade-in'} style={count > 4 ? {} : { visibility: 'hidden' }}>
-                        <Decypher words={language === 'French' ? ['Développeur'] : ['Developer']} />
+                        {language === 'French' ? 'Développeur' : 'Developer'}
                     </div>
                 </div>
             </div>
