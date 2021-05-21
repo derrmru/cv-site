@@ -54,5 +54,15 @@ module.exports = {
         head: true
       }
     },
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        cssLoaderOptions: {
+          modules: {
+            exportLocalsConvention: 'camelCaseOnly'
+          }
+        }
+      }
+    },
   ],
 }
