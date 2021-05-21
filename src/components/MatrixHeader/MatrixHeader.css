@@ -26,15 +26,15 @@
 }
 
 .border {
-stroke-dasharray: 496;
-stroke-dashoffset: 496;
+stroke-dasharray: 496px;
+stroke-dashoffset: 496px;
 animation: dash 2s linear forwards;
 animation-delay: 1s;
 }
 
 .outline {
-stroke-dasharray: 270;
-stroke-dashoffset: 270;
+stroke-dasharray: 270px;
+stroke-dashoffset: 270px;
 animation: dash 1s linear forwards;
 animation-delay: 3.5s;
 }
@@ -52,8 +52,8 @@ animation-delay: 3.5s;
 }
 
 .line {
-  stroke-dasharray: 200;
-  stroke-dashoffset: 200;
+  stroke-dasharray: 200px;
+  stroke-dashoffset: 200px;
   animation: line .5s linear forwards;
   animation-delay: 4s;
 }
