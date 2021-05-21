@@ -126,7 +126,9 @@ const MatrixHeader = ({ language, words }) => {
                 </svg>
             </div>
             <div>
-                <h1 className="peterTitle" style={count > 3 ? { marginTop: '20px' } : { display: 'hidden' }}><TypeOut words={'Peter Sweeney'} /></h1>
+                <h1 className="peterTitle" style={{ marginTop: '20px' }}>
+                    <TypeOut words={'Peter Sweeney'} />
+                </h1>
                 <div style={{ minHeight: '35px' }}>
                     <div className={count > 4 && 'fade-in'} style={count > 4 ? {} : { visibility: 'hidden' }}>
                         <Decypher words={words} />
