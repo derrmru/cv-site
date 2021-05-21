@@ -15,7 +15,6 @@ module.exports = {
     description: `Peter Sweeney is a web and software developer, with specialisms in React, Progressive Web Apps, Single Page Applications, and Gatsby JS.`,
   },
   plugins: [
-    `gatsby-plugin-postcss`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,
     {
