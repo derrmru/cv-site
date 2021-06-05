@@ -5,6 +5,7 @@ import Body from "../templates/Body/Body"
 import Seo from '../components/Seo/Seo'
 import DownWardArrow from "../components/Icons/DownwardArrow/DownwardArrow"
 import Decypher from '../components/Decypher/Decypher'
+import CV from '../downloads/cv.pdf'
 import './about.css'
 
 const About = () => {
@@ -46,7 +47,7 @@ const About = () => {
                     <div className="about-title">
                         <h1><Decypher words={['About My Work']} /></h1>
 
-                        <a href={require('../downloads/cv.pdf')} download>
+                        <a href={CV} download>
                             <button
                                 className="about-buttons"
                             >
