@@ -35,7 +35,7 @@ const AddressComplete = () => {
 
                     <h2>Links</h2>
                     <strong>Repository:</strong> <a href="https://github.com/derrmru/address-autocomplete" target="_blank" rel="noreferrer">Github</a>
-                    <p>Available on NPM <a href="" target="_blank" rel="noreferrer">here</a>.</p>
+                    <p>Available on NPM <a href="https://www.npmjs.com/package/places-autocomplete-react" target="_blank" rel="noreferrer">here</a>.</p>
 
                     <h2>Setup</h2>
                     <p>1. Setup the APIS:</p>
@@ -61,6 +61,7 @@ const AddressComplete = () => {
                                 &nbsp;&nbsp;&nbsp;&nbsp;placesKey="AIzaSyAkuPHNHz8Ki1KV6n6iI1-EFVIC3ZAm0QY"<br />
                                 &nbsp;&nbsp;&nbsp;&nbsp;inputId="address"<br />
                                 &nbsp;&nbsp;&nbsp;&nbsp;setAddress=&#123;(addressObject) =&gt; console.log(addressObject)&#125;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;required=&#123;true&#125;<br />
                                 &nbsp;&nbsp;/&gt;<br />
                             );<br />
                             &#125;<br /><br />
@@ -74,6 +75,7 @@ const AddressComplete = () => {
                         <li>placesKey: string - this is your api key. The component will handle the rest.</li>
                         <li>inputId: string - using distinct id's will allow you to use multiple instances of this component in your form.</li>
                         <li>setAddress: function - the formatted address and input field state is made available to the parent component via this function. It's up to you what you do with it.</li>
+                        <li>required: boolean - (optional) sets the fields as required</li>
                     </ul>
                 </div>
             </Body>

@@ -48,6 +48,7 @@ function App() {
         placesKey="AIzaSyAkuPHNHz8Ki1KV6n6iI1-EFVIC3ZAm0QY"
         inputId="address"
         setAddress={(addressObject) => console.log(addressObject)}
+        required={true}
         />
   );
 }
@@ -61,6 +62,7 @@ The props are of the following types:
 placesKey: string - this is your api key. The component will handle the rest.
 inputId: string - using distinct id's will allow you to use multiple instances of this component in your form.
 setAddress: function - the formatted address and input field state is made available to the parent component via this function. It's up to you what you do with it.
+required: boolean - (optional) sets the fields as required
 
 ```
 
