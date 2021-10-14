@@ -10,9 +10,9 @@ const DownwardArrow = (props) => {
     const [mouse, setMouse] = useState(false);
 
     return (
-        <button 
+        <button
             className={downwardArrow}
-            style={{animationDelay: props.delay}}
+            style={{ animationDelay: props.delay }}
             aria-label="Scroll Downards"
             onKeyDown={(e) => e.code === "Space" && scrollTo(props.linkTo)}
             onClick={() => scrollTo(props.linkTo)}
@@ -20,11 +20,11 @@ const DownwardArrow = (props) => {
             onMouseLeave={() => setMouse(false)}
             onTouchStart={() => setTimeout(true)}
             onTouchEnd={() => setTimeout(true)}
-            >
+        >
             <div className={dIcon}>
-                <div className={dArrow} style={mouse ? 
-                                                    {borderRight: "solid 2px var(--the-white)", borderBottom: "solid 2px var(--the-white)"} : 
-                                                        {borderRight: "solid 2px var(--the-black)", borderBottom: "solid 2px var(--the-black)"}}></div>
+                <div className={dArrow} style={mouse ?
+                    { borderRight: "solid 2px var(--the-white)", borderBottom: "solid 2px var(--the-white)" } :
+                    { borderRight: "solid 2px var(--the-black)", borderBottom: "solid 2px var(--the-black)" }}></div>
             </div>
         </button>
     )

@@ -1,65 +1,66 @@
 .downwardArrow {
-    position: absolute;
-    bottom: 10vh;
-    width: 45px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #ebebeb00;
-    background-blend-mode: lighten;
-    opacity: 0;
-    outline: none;
-    border: none;
-    animation: fade ease 1s forwards;
+  position: absolute;
+  bottom: 10vh;
+  width: 45px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ebebeb00;
+  background-blend-mode: lighten;
+  opacity: 0;
+  outline: none;
+  border: none;
+  animation: fade ease 1s forwards;
 }
 
 @keyframes fade {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
 
 .dIcon {
-    width: 30px;
-    height: 40px;
-    border: 1px solid var(--the-black);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #ebebeb00;
-    transition: 1s;
+  width: 30px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid var(--the-black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ebebeb00;
+  transition: 1s;
 }
 
 .dArrow {
-    width: 10px;
-    height: 10px;
-    border-right: 2px solid var(--the-white);
-    border-bottom: 2px solid var(--the-white);
-    transform: rotate(45deg);
-    transition: 1s;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--the-white);
+  border-bottom: 2px solid var(--the-white);
+  transform: rotate(45deg);
+  transition: 1s;
 }
 
-@media (hover:hover) {
-    .dIcon:hover {
-        cursor: pointer;
-        height: 30px;
-        background-color: var(--the-black);
-    }
+@media (hover: hover) {
+  .dIcon:hover {
+    cursor: pointer;
+    height: 30px;
+    background-color: var(--the-black);
+  }
 }
 
 @media only screen and (max-width: 1025px) {
-    .downwardArrow {
-        bottom: 15vh;
-    }
+  .downwardArrow {
+    bottom: 15vh;
+  }
 }
 
-@media  (max-device-width: 1023px) and (orientation: landscape) {
-    .downwardArrow {
-        animation: none;
-    }
+@media (max-device-width: 1023px) and (orientation: landscape) {
+  .downwardArrow {
+    animation: none;
   }
+}

@@ -16,30 +16,30 @@ const About = () => {
                 title="About"
                 description="Headlines: Full stack web development. Europe-based remote worker. Clean, responsive & mobile-first web design. Well documented projects."
                 schema={{
-                    '@type': 'Person', 
+                    '@type': 'Person',
                     'email': 'peter@thepetersweeney.com',
                     'image': 'https://thepetersweeney.com/static/e012596220d803e42cc1e97e5f660fc0/ae1c8/profile.png',
                     'jobTitle': 'Full Stack Developer',
                     'name': 'Peter Sweeney',
                     'additionalName': 'Joshua',
                     "relevantOccupation": {
-                      "@type": "Occupation",
-                      "name": "Full Stack Developer",
-                      "occupationalCategory": {
-                               "@type": "CategoryCode",
-                               "inCodeSet": {
-                                    "@type": "CategoryCodeSet",
-                                    "name": "O*Net-SOC",
-                                    "dateModified": "2021",
-                                    "url": "https://www.onetonline.org/"
-                                 },
-                               "codeValue": "15-1254.00",
-                               "name": "Web Developers, Applications",
-                               "url": "https://www.onetonline.org/link/summary/15-1254.00"
-                           }
+                        "@type": "Occupation",
+                        "name": "Full Stack Developer",
+                        "occupationalCategory": {
+                            "@type": "CategoryCode",
+                            "inCodeSet": {
+                                "@type": "CategoryCodeSet",
+                                "name": "O*Net-SOC",
+                                "dateModified": "2021",
+                                "url": "https://www.onetonline.org/"
+                            },
+                            "codeValue": "15-1254.00",
+                            "name": "Web Developers, Applications",
+                            "url": "https://www.onetonline.org/link/summary/15-1254.00"
+                        }
                     },
                     'url': 'https://thepetersweeney.com/about'
-                  }}
+                }}
             />
 
             <div className="about-background">
@@ -87,13 +87,13 @@ const About = () => {
                                     <h3>Stack</h3>
                                     <p><strong>Front End:</strong></p>
                                     <ul>
-                                        <li>Languages: Javascript, Typescript, HTML, CSS, Ruby</li>
-                                        <li>Libraries: React JS, JQuery, D3 JS</li>
-                                        <li>Frameworks: Gatsby JS, Next JS, Rails</li>
+                                        <li>Languages: Javascript, Typescript, HTML, CSS</li>
+                                        <li>Libraries: React JS, JQuery, D3 JS, Tailwind</li>
+                                        <li>Frameworks: Gatsby JS, Next JS, Create-React-App</li>
                                         <li>CMS: Netlify, Contentful, Wordpress</li>
                                         <li>Queries: GraphQL, REST</li>
                                     </ul>
-                                    <p><strong>Database:</strong> Mongo DB, Mongoose, sqlite</p>
+                                    <p><strong>Database:</strong> Mongo DB, Mongoose, Firestore</p>
                                     <p><strong>Server:</strong> Node JS, Express JS, PHP</p>
                                     <p><strong>Cloud:</strong></p>
                                     <ul>
