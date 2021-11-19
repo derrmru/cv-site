@@ -6,7 +6,7 @@ title: "Website - Drama Fruit"
 projectLink: "https://www.dramafruit.com/"
 client: "Drama Fruit"
 clientLink: "https://www.dramafruit.com/"
-period: ["août 2020", "August 2020"]
+period: ["août 2021", "August 2021"]
 specialisms: ["next js", "react js", "css", "contentful", "firestore", "mollie"]
 repository: "https://github.com/derrmru/drama-fruit"
 description: "Boutique web shop for Amsterdam-based fashion store, Drama Fruit."

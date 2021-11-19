@@ -21,19 +21,19 @@ const Scheduler = () => {
         setDate(selectedDate)
         setSelectedTime(undefined) //This resets the booking form to time selector if a new date is selected
         setLoadingTimes(true)
-        let packet = {"selectedDate": selectedDate};
-        $.post("https://script.google.com/macros/s/AKfycbwTnmaAywcZZueQb20U2pVeU6LH6gdwl9gpsKk8Dbb1Ks1OigOA/exec", 
-            packet, 
-            async (res, status) => {
+        let packet = { "selectedDate": selectedDate };
+        $.post("https://script.google.com/macros/s/AKfycbwTnmaAywcZZueQb20U2pVeU6LH6gdwl9gpsKk8Dbb1Ks1OigOA/exec",
+            packet,
+            async (res) => {
                 let result = await JSON.parse(res);
                 setAvailableTimes(result)
                 setLoadingTimes(false)
                 setLoadSend(false)
                 setThankYou(false)
                 scrollTo('#atBox')
-                }).done(() => {
-                    console.log('complete')
-                });
+            }).done(() => {
+                console.log('complete')
+            });
     }
 
     const selectTime = (selectedTime) => {
@@ -46,80 +46,80 @@ const Scheduler = () => {
         const details = {
             name: name,
             startTime: selectedTime,
-            email: email, 
-            telephone: telephone, 
+            email: email,
+            telephone: telephone,
             purpose: purpose,
             medium: medium,
             handle: handle,
         }
-        $.post("https://script.google.com/macros/s/AKfycbxd4KDyBgaCQFQ2GP_MO1ZSIRKqpeS4_NuCHFxReFDmN5vt0FgY/exec", 
-            details, 
+        $.post("https://script.google.com/macros/s/AKfycbxd4KDyBgaCQFQ2GP_MO1ZSIRKqpeS4_NuCHFxReFDmN5vt0FgY/exec",
+            details,
             async (res, status) => {
                 console.log(res)
                 console.log(status)
                 setLoadSend(false)
                 setThankYou(true)
-                }).done(() => {
-                    console.log('complete')
-                });
+            }).done(() => {
+                console.log('complete')
+            });
     }
 
     useEffect(() => {
         console.log(date.getFullYear())
-        let data = {"year": date.getFullYear()};
-        $.post("https://script.google.com/macros/s/AKfycbyxj8CwoOIIIilWFsINllvkZsSW-fyLs2pxzTckl91oTAvLnnuFVfAKnw/exec", 
-            data, 
+        let data = { "year": date.getFullYear() };
+        $.post("https://script.google.com/macros/s/AKfycbyxj8CwoOIIIilWFsINllvkZsSW-fyLs2pxzTckl91oTAvLnnuFVfAKnw/exec",
+            data,
             async (res, status) => {
                 let result = await JSON.parse(res);
                 console.log(result)
-                    setAvailableDates(result)
-                }).done(() => {
-                    console.log('complete')
-                });
+                setAvailableDates(result)
+            }).done(() => {
+                console.log('complete')
+            });
     }, [date])
 
     return (
         <>
-        <h1 style={{marginTop: "40px"}}>Schedule a Call</h1>
+            <h1 style={{ marginTop: "40px" }}>Schedule a Call</h1>
             <div className="scheduler-container">
 
                 <div className="scheduler-cal">
-                    <Calendar 
+                    <Calendar
                         name="scheduler"
                         availableDates={availableDates}
                         date={date}
                         updateCalendar={updateCalendar}
-                        />
+                    />
                 </div>
 
                 <div className="scheduler-times">
                     {
                         selectedTime === undefined ?
 
-                            <AvailableTimes 
+                            <AvailableTimes
                                 selectTime={selectTime}
                                 loadingTimes={loadingTimes}
                                 availableTimes={availableTimes}
-                                />
-                            
-                                :
-                            
-                            loadSend ? 
+                            />
 
-                                <div>Loading...</div> 
-                                
+                            :
+
+                            loadSend ?
+
+                                <div>Loading...</div>
+
                                 :
-                                
-                                thankYou ? <ThankYou 
-                                                selectedTime={selectedTime}
-                                                />
+
+                                thankYou ? <ThankYou
+                                    selectedTime={selectedTime}
+                                />
 
                                     :
 
-                                    <BookingForm 
+                                    <BookingForm
                                         selectedTime={selectedTime}
                                         handleSubmit={handleSubmit}
-                                        />
+                                    />
 
                     }
                 </div>

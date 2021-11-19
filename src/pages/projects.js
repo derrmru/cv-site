@@ -31,26 +31,26 @@ const Projects = (props) => {
         }
     `)
     const projects = data.allMarkdownRemark.edges;
-    
+
     return (
         <Body>
-            <Seo 
-                title="Portfolio" 
+            <Seo
+                title="Portfolio"
                 description="A Portfolio of previous web development work and client projects."
-                />
+            />
             <h1 className="projects-page-title">Portfolio</h1>
             <div className="projects-container">
                 <div className="year-select-container">
-                    <div style={{height: 'fit-content'}}>&#62; Filter By Year :</div>
+                    <div style={{ height: 'fit-content' }}>&#62; Filter By Year :</div>
                     {
                         years.map((year, i) => {
-                            return <button 
+                            return <button
                                 key={'yearselect' + i}
                                 className="year-select-button"
                                 onClick={() => setDate(year)}
-                                >
-                                    {year === '' ? 'Reset' : year}
-                                </button>
+                            >
+                                {year === '' ? 'Reset' : year}
+                            </button>
                         })
                     }
                 </div>
@@ -59,23 +59,23 @@ const Projects = (props) => {
                         .sort((a, b) => {
                             return new Date(b.node.frontmatter.date) - new Date(a.node.frontmatter.date)
                         })
-                        .filter((edge) => edge.node.frontmatter.date.indexOf(date) >= 0 )
+                        .filter((edge) => edge.node.frontmatter.date.indexOf(date) >= 0)
                         .map((edge, i) => {
                             const project = edge.node.frontmatter
-                            return <a 
+                            return <a
                                 key={'project' + i}
                                 className="project-link"
                                 href={project.slug}
-                                style={{color: 'var(--the-black)'}}
-                                >
+                                style={{ color: 'var(--the-black)' }}
+                            >
                                 <div
                                     className="project-card"
-                                    >
-                                        <div className="project-title">{project.title}</div>
-                                        <div className="project-hr"></div>
-                                        <div className="project-description">{project.description && project.description}</div>
-                                        <div className="project-hr"></div>
-                                        <div>{props.language === 'French' ? project.period[0] : project.period[1]}</div>
+                                >
+                                    <div className="project-title">{project.title}</div>
+                                    <div className="project-hr"></div>
+                                    <div className="project-description">{project.description && project.description}</div>
+                                    <div className="project-hr"></div>
+                                    <div>{props.language === 'French' ? project.period[0] : project.period[1]}</div>
                                 </div>
                             </a>
                         })

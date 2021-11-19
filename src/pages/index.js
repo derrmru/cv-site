@@ -44,11 +44,11 @@ export default function Home() {
   return (
     <div className="homepage">
       <Body language={language}>
-        <Seo 
-          title={language === 'French' ? "Accueil" : "Home"} 
+        <Seo
+          title={language === 'French' ? "Accueil" : "Home"}
           description="Full Stack Developer, specialising in modern web libraries and frameworks. I create and develop applications, websites and interfaces for businesses, brands and individuals. Active in all stages of the build process from inception to production."
           schema={{
-            '@type': 'Person', 
+            '@type': 'Person',
             'email': 'peter@thepetersweeney.com',
             'image': 'https://thepetersweeney.com/static/e012596220d803e42cc1e97e5f660fc0/ae1c8/profile.png',
             'jobTitle': 'Full Stack Developer',
@@ -61,11 +61,11 @@ export default function Home() {
                 "occupationalCategory": {
                   "@type": "CategoryCode",
                   "inCodeSet": {
-                       "@type": "CategoryCodeSet",
-                       "name": "O*Net-SOC",
-                       "dateModified": "2021",
-                       "url": "https://www.onetonline.org/"
-                    },
+                    "@type": "CategoryCodeSet",
+                    "name": "O*Net-SOC",
+                    "dateModified": "2021",
+                    "url": "https://www.onetonline.org/"
+                  },
                   "codeValue": "15-1254.00",
                   "name": "Web Developers, Applications",
                   "url": "https://www.onetonline.org/link/summary/15-1254.00"
@@ -89,13 +89,13 @@ export default function Home() {
             ],
             'url': 'https://thepetersweeney.com'
           }}
-          />
+        />
 
         <div className="huge-title">
-          <MatrixHeader 
-            language={language} 
+          <MatrixHeader
+            language={language}
             words={['Web', 'React', 'Next', 'Gatsby', 'PWA', 'Javascript', 'Nomad', 'Front End', 'Full Stack']}
-            />
+          />
           <DownwardArrow delay="6s" linkTo='#section-2' />
         </div>
 
@@ -134,20 +134,20 @@ export default function Home() {
             <div className="portfolio-card-container">
               {
                 projects
-                .sort((a, b) => new Date(b.node.frontmatter.date) - new Date(a.node.frontmatter.date))
-                .filter((project, idx) => idx < 3)
-                .map((project, i) => {
-                  const front = project.node.frontmatter;
-                  return <Card 
-                    key={'port-item' + i} 
-                    title={front.title}
-                    link={front.slug}
-                    description={front.description}
-                    language={language}
-                    period={front.period}
-                    specialisms={front.specialisms}
+                  .sort((a, b) => new Date(b.node.frontmatter.date) - new Date(a.node.frontmatter.date))
+                  .filter((project, idx) => idx < 3)
+                  .map((project, i) => {
+                    const front = project.node.frontmatter;
+                    return <Card
+                      key={'port-item' + i}
+                      title={front.title}
+                      link={front.slug}
+                      description={front.description}
+                      language={language}
+                      period={front.period}
+                      specialisms={front.specialisms}
                     />
-                })
+                  })
               }
             </div>
             <div className="smp-link">
@@ -164,16 +164,16 @@ export default function Home() {
                   <h3 className="contact-title">Get In Touch</h3>
                   <h4>Currently accepting new business!</h4>
                   <p>Drop me an email or schedule a call to discuss your project.</p>
-                  <Link style={{textDecoration: 'none'}} to="/schedule">+ Schedule a Call</Link>
+                  <Link style={{ textDecoration: 'none' }} to="/schedule">+ Schedule a Call</Link>
                 </div>
                 <div>
-                  <a style={{textDecoration: 'none'}} href="mailto:peter@thepetersweeney.com"> + peter@thepetersweeney.com</a>
+                  <a style={{ textDecoration: 'none' }} href="mailto:peter@thepetersweeney.com"> + peter@thepetersweeney.com</a>
                   <br />
                   <br />
-                  <a style={{textDecoration: 'none'}} href="tel:+33787207034"> + France: +33 7 87 20 70 34</a>
+                  <a style={{ textDecoration: 'none' }} href="tel:+33787207034"> + France: +33 7 87 20 70 34</a>
                   <br />
                   <br />
-                  <a style={{textDecoration: 'none'}} href="tel:+447593084393"> + UK: +44 7593 084 393</a>
+                  <a style={{ textDecoration: 'none' }} href="tel:+447593084393"> + UK: +44 7593 084 393</a>
                 </div>
               </div>
             </div>
