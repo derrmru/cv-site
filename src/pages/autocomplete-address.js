@@ -7,14 +7,14 @@ import {
 } from './autocomplete.module.css';
 
 const AddressComplete = () => {
-    
+
     return (
         <div>
             <Body>
-                <Seo 
-                    title="Places Autocomplete React | A Reusable React Component" 
+                <Seo
+                    title="Places Autocomplete React | A Reusable React Component"
                     description="Simple, small and easy react component to incorporate predictive and autocomplete functionality to the address section in your form. Available via NPM."
-                    />
+                />
                 <h1>Places Autocomplete React</h1>
                 <h2>Reusable React Component</h2>
                 <div className={acContainer}>
@@ -26,10 +26,10 @@ const AddressComplete = () => {
 
                     <h2>Example:</h2>
                     <div>
-                    <AutoComplete 
-                        placesKey="AIzaSyAkuPHNHz8Ki1KV6n6iI1-EFVIC3ZAm0QY"
-                        inputId="address"
-                        setAddress={(addressObject) => console.log(addressObject)}
+                        <AutoComplete
+                            placesKey="AIzaSyAkuPHNHz8Ki1KV6n6iI1-EFVIC3ZAm0QY"
+                            inputId="address"
+                            setAddress={(addressObject) => console.log(addressObject)}
                         />
                     </div>
 
@@ -57,12 +57,12 @@ const AddressComplete = () => {
 
                             function App() &#123;<br />
                             return (<br />
-                                &nbsp;&nbsp;&lt;AutoComplete <br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;placesKey="AIzaSyAkuPHNHz8Ki1KV6n6iI1-EFVIC3ZAm0QY"<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;inputId="address"<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;setAddress=&#123;(addressObject) =&gt; console.log(addressObject)&#125;<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;required=&#123;true&#125;<br />
-                                &nbsp;&nbsp;/&gt;<br />
+                            &nbsp;&nbsp;&lt;AutoComplete <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;placesKey="YOUR_GOOGLE_PLACES_API_KEY"<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;inputId="address"<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;setAddress=&#123;(addressObject) =&gt; console.log(addressObject)&#125;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;required=&#123;true&#125;<br />
+                            &nbsp;&nbsp;/&gt;<br />
                             );<br />
                             &#125;<br /><br />
 

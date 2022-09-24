@@ -45,7 +45,7 @@ const MatrixHeader = ({ language, words }) => {
                             />
                         </g>
                         <g>
-                            <g clip-path="url(#clipPath22)">
+                            <g clipPath="url(#clipPath22)">
                                 <g transform="translate(106.8682,4.1875)">
                                     <path
                                         className="border"
@@ -114,8 +114,8 @@ const MatrixHeader = ({ language, words }) => {
                         width: '200px',
                         height: '10px'
                     }}
-                    viewbox="0 0 200 10"
-                    stroke-width="1"
+                    viewBox="0 0 200 10"
+                    strokeWidth="1"
                 >
                     <path
                         className="line"
@@ -130,10 +130,10 @@ const MatrixHeader = ({ language, words }) => {
                     <TypeOut words={'Peter Sweeney'} />
                 </h1>
                 <div style={{ minHeight: '35px' }}>
-                    <div className={count > 4 && 'fade-in'} style={count > 4 ? {} : { visibility: 'hidden' }}>
+                    <div className={count > 4 ? 'fade-in' : undefined} style={count > 4 ? {} : { visibility: 'hidden' }}>
                         <Decypher words={words} />
                     </div>
-                    <div className={count > 4 && 'fade-in'} style={count > 4 ? {} : { visibility: 'hidden' }}>
+                    <div className={count > 4 ? 'fade-in' : undefined} style={count > 4 ? {} : { visibility: 'hidden' }}>
                         {language === 'French' ? 'Développeur' : 'Developer'}
                     </div>
                 </div>

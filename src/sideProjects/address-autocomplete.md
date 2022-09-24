@@ -1,20 +1,20 @@
 ---
-type: 'side-project'
+type: "side-project"
 slug: /projects/address-autocomplete
-date: '2021-07-14'
-title: 'Places Autocomplete React'
-projectLink: 'https://thepetersweeney.com/autocomplete-address'
-period: ['juillet 2021', 'July 2021']
-specialisms: ['reactjs', 'NPM', 'Google Maps API']
-repository: 'https://github.com/derrmru/address-autocomplete'
-description: 'Reusable React Component to predict and autocomplete address section of your forms, available via NPM.'
+date: "2021-07-14"
+title: "Places Autocomplete React"
+projectLink: "https://thepetersweeney.com/autocomplete-address"
+period: ["juillet 2021", "July 2021"]
+specialisms: ["reactjs", "NPM", "Google Maps API"]
+repository: "https://github.com/derrmru/address-autocomplete"
+description: "Reusable React Component to predict and autocomplete address section of your forms, available via NPM."
 ---
 
 # Google Maps Places AutoComplete
 
-This is a reusable React component for quickly and easily adding an Address section to your forms. 
+This is a reusable React component for quickly and easily adding an Address section to your forms.
 
-It uses Google Maps Places Autocomplete service to predict and autocomplete your input fields. 
+It uses Google Maps Places Autocomplete service to predict and autocomplete your input fields.
 
 This component offers a fast setup and inherits the styling of your app.
 
@@ -28,8 +28,8 @@ Test the demo [here](https://thepetersweeney.com/autocomplete-address)
 
 1. Setup the APIS:
 
- - [Enable Google Maps Places API](https://developers.google.com/maps/documentation/javascript/places#enable_apis).
- - [Get an API key](https://developers.google.com/maps/documentation/javascript/get-api-key).
+- [Enable Google Maps Places API](https://developers.google.com/maps/documentation/javascript/places#enable_apis).
+- [Get an API key](https://developers.google.com/maps/documentation/javascript/get-api-key).
 
 2. In your CLI and once navigated to your React JS project, install with the following command:
 
@@ -40,20 +40,20 @@ npm i places-autocomplete-react
 3. Implement in your app, as per the following example:
 
 ```javascript
-import AutoComplete from 'places-autocomplete-react'
+import AutoComplete from "places-autocomplete-react"
 
 function App() {
   return (
-      <AutoComplete 
-        placesKey="AIzaSyAkuPHNHz8Ki1KV6n6iI1-EFVIC3ZAm0QY"
-        inputId="address"
-        setAddress={(addressObject) => console.log(addressObject)}
-        required={true}
-        />
-  );
+    <AutoComplete
+      placesKey="YOUR_GOOGLE_PLACES_API_KEY"
+      inputId="address"
+      setAddress={addressObject => console.log(addressObject)}
+      required={true}
+    />
+  )
 }
 
-export default App;
+export default App
 ```
 
 The props are of the following types:
